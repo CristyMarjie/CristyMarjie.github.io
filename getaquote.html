@@ -1,0 +1,432 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script
+      src="https://kit.fontawesome.com/133d03ba7a.js"
+      crossorigin="anonymous"
+    ></script>
+  <title>Printcraffiti Company</title>
+</head>
+<body>
+  <header class="container-fluid">
+    <!-- start top -->
+    <!--div id="top" class="top bg-primary text-light">
+      <div class="container">
+
+        <div class="row py-1">
+          <div class="col-12 col-lg-6">
+            <p class="m-0 "><b>Email: princraffiti@gmail.com</b></p>
+          </div>
+          <div class="col-12 col-lg-6">
+            <p class="text-lg-end m-0"><b>Phone: +63 9469 341998</b></p>
+          </div>
+        </div>
+
+      </div>
+    </div-->
+    <!-- end top -->
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img width="60px" src="img/pclogo.png" alt="">
+        </a>
+        <button class="navbar-toggler" style="background-color:#F7913E;" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item px-3">
+              <a class="nav-link active text-dark fw-bold" aria-current="page" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle text-dark fw-bold" href="#products" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-dark" href="businesscard.html">Business Cards</a></li>
+                <li><a class="dropdown-item text-dark" href="notebook.html">Notebooks</a></li>
+                <li><a class="dropdown-item text-dark" href="letterheads.html">Letterheads</a></li>
+                <li><a class="dropdown-item text-dark" href="calendar.html">Calendars</a></li>
+                <li><a class="dropdown-item text-dark" href="invitation.html">Invitation Cards</a></li>
+                <li><a class="dropdown-item text-dark" href="photoprint.html">Photoprints</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item px-3">
+            <a class="nav-link text-dark fw-bold" data-bs-toggle="modal" data-bs-target="#howtoordermodal" aria-current="page" href="">How to order</a>
+            </li>
+            <li class="nav-item px-3">
+            <a class="nav-link text-dark fw-bold" aria-current="page" href="faq.html">FAQs</a>
+            </li>
+            <li class="nav-item px-3">
+            <a class="nav-link text-dark fw-bold" aria-current="page" href="getaquote.html">Get a Quote</a>
+            </li>
+            <li class="nav-item px-3">
+            <a class="nav-link text-dark fw-bold" aria-current="page" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item px-3">
+            <a class="nav-link text-dark fw-bold" aria-current="page" href="payment.html">Payment Method</a>
+            </li>
+            <!--li class="nav-item px-3">
+              <a class="nav-link text-dark " aria-current="page" href="#paymentmethods"><b>Login/Register</b></a>
+            </li-->
+          </ul>
+          <div class="d-flex">
+          </div>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark fw-bold">Login | Register</button>
+          <!--div class="d-flex">
+            <a href="" class=""><img src="img/nav-icon/facebook.png" alt=""></a> &nbsp;&nbsp;
+            <a href="" class=""><img src="img/nav-icon/skype.png" alt=""></a> &nbsp;&nbsp;
+            <a href="" class=""><img src="img/nav-icon/linkedin.png" alt=""></a>
+          </div-->
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- START C BG -->
+  <section class="container-fluid">
+    <div id="carouselExampleIndicators" class="carousel slide container py-3" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/calculate.png" class="d-block w-100" alt="Slide 1">
+        </div>
+  </section>
+  <!-- END GET A QUOTE BG -->
+
+  <!-- START TOP GET A QUOTE -->
+  <section id="getaquote" class="container py-3">
+      <div class="row py-5">
+          <div class="col-12 text-right">
+              <h2 class="fs-1 fw-b text-gray"><strong>Didn’t find what you’re looking for ?</strong></h2>
+              <p class="fw-bold text-orange">
+                  <i>
+                      Get a rough estimate or Request a Quote.
+                  </i>
+              </p>
+              <!-- START TABS -->
+              <!-- START QUICK ESTIMATE -->
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-orange active" id="quick-estimate-tab" data-bs-toggle="tab" data-bs-target="#quick_estimate_tab" type="button" role="tab" aria-controls="home" aria-selected="true">Quick Estimate</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link text-orange" id="request-quote" data-bs-toggle="tab" data-bs-target="#request_quote" type="button" role="tab" aria-controls="profile" aria-selected="false">Request a Quote</button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="quick_estimate_tab" role="tabpanel" aria-labelledby="quick-estimate-tab">
+                  <div class="row py-5">
+
+                    <div class="col-12 mb-3">
+                      <div class="form-floating">
+                        <select class="form-select" id="product_name" aria-label="Floating label select example">
+                          <!-- <option selected>Product Name</option> -->
+                          <option value="Photoprint - Standard">Photoprint - Standard</option>
+                          <option value="Photoprint - Laminated">Photoprint - Laminated</option>
+                          <option value="">Rubberized Fridge Magnet - Standard</option>
+                          <option value="Rubberized Fridge Magnet - Laminated">Rubberized Fridge Magnet - Laminated</option>
+                          <option value="PVC ID">PVC ID</option>
+                          <option value="Thank you tag">Thank you tag</option>
+                          <option value="Tarpaulin">Tarpaulin</option>
+                        </select>
+                        <label for="product_name">Product Name</label>
+                      </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="quick_estimate_height">
+                        <label for="quick_estimate_height">Height (in)<span class="text-danger">*</span></label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="quick_estimate_width">
+                        <label for="quick_estimate_width">Width (in)<span class="text-danger">*</span></label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                      <div class="form-floating">
+                        <input type="number" class="form-control" id="quick_estimate_quantity">
+                        <label for="quick_estimate_quantity">Quantity <span class="text-danger">*</span></label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="quick_estimate_subtotal" disabled>
+                        <label for="quick_estimate_subtotal">Subtotal</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="quick_estimate_discount" disabled>
+                        <label for="quick_estimate_discount">Discount</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="quick_estimate_total" disabled>
+                        <label for="quick_estimate_total">Total</label>
+                      </div>
+                    </div>
+            
+                  </div>
+                  <p id="estimate_statement">[Product] with dimensions ________ is [total] if the order quantity is [quantity] pcs and above. </p>
+                </div>
+                <!-- END QUICK ESTIMATE -->
+
+                <!-- START REQUEST QUOTE -->
+                <div class="tab-pane fade" id="request_quote" role="tabpanel" aria-labelledby="request-quote">
+                  <div class="row py-4">
+                    <i>Is there a more specific type of product you want us to quote ? Fill in this form to</i> 
+                    <i class="fw-bold text-gray">Request a Quote.</i><BR><BR>
+                    <h2 class="fs-3 fw-b text-gray"><strong>Customer Details</strong></h2>
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="first_name">
+                        <label for="first_name">First Name<span class="text-danger">*</span></label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="last_name">
+                        <label for="last_name">Last Name <span class="text-danger">*</span></label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                      <div class="form-floating">
+                        <input type="email" class="form-control" id="c_email">
+                        <label for="c_email">Email<span class="text-danger">*</span></label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                      <div class="form-floating">
+                        <input type="number" class="form-control" id="c_number">
+                        <label for="c_number">Contact Number <span class="text-danger">*</span></label>
+                      </div>
+                    </div>
+
+                    <h2 class="fs-3 fw-b text-gray mt-4"><strong>Quote Details</strong></h2>
+                    <div class="col-12 mb-3">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="quote_title">
+                        <label for="quote_title">Quote Title<span class="text-danger">*</span></label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                      <label for="prod_type" class="me-3">Product Type</label>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+                        <label class="form-check-label" for="inlineRadio1">Existing Product</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                        <label class="form-check-label" for="inlineRadio2">Custom Product</label>
+                      </div>
+                    </div>
+                     
+            
+                  </div>
+                </div>
+              </div>
+              <!-- START REQUEST QUOTE -->
+              <!-- END TABS -->
+          </div>
+      </div>
+      <i class="fw-bold text-gray">Quick Estimate</i>
+      <i>immediate price estimate of the product specs you want without waiting for our response as it is system-generated. While </i> 
+      <i class="fw-bold text-gray">Request a Quote</i>
+      <i>is where you can request for a detailed quote of the products not available in the Quick Estimate.</i>
+  </section>
+
+    <!-- END GET A QUOTE -->
+    <hr class="dashed-2">
+  <!-- START FOOTER -->
+  <footer class="py-5 text-secondary">
+    <div class="container" >
+      <div class="row">
+        <div class="row pb-5">
+          <div class="col-12 text-center">
+            <a href="#top"><img width="40px" src="img/top.png" alt=""></a>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div>
+            <h5 class="fw-bold">Contact Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a class="nav-link text-secondary">
+                  Printing Services <br>
+                  Business Hours: <br>
+                  Monday - Saturday<br>
+                  8:00 AM - 6:00 PM<br>
+                  Online Shop - Business Hours: 24/7<br>
+                  Main address : Brgy. Duterte, Davao City<br>
+                  Contact no. : 0946 934 1998<br>
+                  Email : account@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+          <div class="">
+            <h5 class="fw-bold">Payment Option</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a class="nav-link text-secondary" aria-current="page" href="">Bank Transfer</a>
+              </li>
+              <li>
+                <a class="nav-link text-secondary"  aria-current="page" href="">Gcash</a>
+              </li>
+              <li>
+                <a class="nav-link text-secondary" aria-current="page" href="">Maya</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6">
+          <div>
+            <h5 class="fw-bold">Stay Connected</h5>
+            <ul class="list-unstyled">
+              <a href="https://www.facebook.com/printcraffiti" class=""><i class="fa-brands fa-facebook text-secondary fs-2 m-1"></i></a> 
+              <a href="" class=""><i class="fa-brands fa-facebook-messenger text-secondary fs-2 m-1"></i></a> 
+              <a href="" class=""><i class="fa-brands fa-pinterest text-secondary fs-2 m-1"></i></a> 
+              <a href="" class=""><i class="fa-brands fa-viber text-secondary fs-2 m-1"></i></a> 
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6">
+          <div>
+            <h5 class="fw-bold">More</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a class="nav-link text-secondary" aria-current="page" href="faq.html">FAQs</a>
+              </li>
+              <li>
+                <a class="nav-link text-secondary"  data-bs-toggle="modal" data-bs-target="#howtoordermodal" aria-current="page" href="">How to order</a>
+              </li>
+              <li>
+                <a class="nav-link text-secondary" aria-current="page" href="">Login | Register</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div><br>
+      <div class="d-flex justify-content-center">
+        <div class="copyright"> 
+          <p class="fw-bold">Copyright @ 2023 Printcraffiti Printing Services</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
+
+    <!-- Start How to Order Modal -->
+    <div class="modal fade" id="howtoordermodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+        <form action="">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">How to order</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <div class="form-floating mb-3">
+                <p class="modal-title" id="exampleModalLabel">
+                1. Login or register for an account
+                </p>
+                <p class="modal-title" id="exampleModalLabel">
+                2. Choose type of product
+                </p>
+                <p class="modal-title" id="exampleModalLabel">
+                3. Fill out the order information
+                </p>
+                <p class="modal-title" id="exampleModalLabel">
+                4. Submit artwork by: <br>
+                &nbsp;&nbsp;a. Uploading a design, or<br>
+                &nbsp;&nbsp;b. Choosing a design from the browser, or<br>
+                &nbsp;&nbsp;c. Create your own design using the online 
+                &nbsp;&nbsp;editing tool (applicable in desktop only)
+                </p>
+                <p class="modal-title" id="exampleModalLabel">
+                5. Verify order information and accept the Terms and Conditions (please read before proceeding)
+                </p>
+                <p class="modal-title" id="exampleModalLabel">
+                6. Verify shipping and billing address
+                </p> 
+                <p class="modal-title" id="exampleModalLabel">
+                7. Select shipping type
+                </p>
+                <p class="modal-title" id="exampleModalLabel">
+                8. Confirm order and proceed to checkout
+                </p>
+                <p class="modal-title" id="exampleModalLabel">
+                9. Payment
+                </p>
+                <p class="modal-title fst-italic" id="exampleModalLabel">
+                Note: You will receive an email of your 
+                order transaction.
+                </p>
+            </p>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            </div>
+        </form>
+        </div>
+    </div>
+    </div>
+    <!-- End How to Order Modal -->
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+crossorigin="anonymous"></script-->
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script> -->
+<!-- Bootstrap JS -->
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+crossorigin="anonymous"
+></script>
+</body>
+</html>

@@ -17,7 +17,13 @@
 .text-gray{
     color: #555555;
 }
+.bg-oranga{
+    background-color: #E85325;
+}
 
+.card-shadow:hover{
+    box-shadow: 3px 1px 5px 5px rgba(0, 0, 0, 0.2);
+}
 /* --START BUSINESS CARDS-- */
 
 

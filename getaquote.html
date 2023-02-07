@@ -26,23 +26,7 @@
 </head>
 <body>
   <header class="container-fluid">
-    <!-- start top -->
-    <!--div id="top" class="top bg-primary text-light">
-      <div class="container">
-
-        <div class="row py-1">
-          <div class="col-12 col-lg-6">
-            <p class="m-0 "><b>Email: princraffiti@gmail.com</b></p>
-          </div>
-          <div class="col-12 col-lg-6">
-            <p class="text-lg-end m-0"><b>Phone: +63 9469 341998</b></p>
-          </div>
-        </div>
-
-      </div>
-    </div-->
-    <!-- end top -->
-    
+   
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -246,18 +230,67 @@
                       </div>
                     </div>
 
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                      <label for="prod_type" class="me-3">Product Type</label>
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-12 mb-3">
+                      <!-- <label for="prod_type" class="me-3">Product Type</label> -->
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
-                        <label class="form-check-label" for="inlineRadio1">Existing Product</label>
+                        <input class="form-check-input" type="radio" name="typeOfProduct" id="oneType" value="1" checked>
+                        <label class="form-check-label" for="oneType">One Type of Product</label>
                       </div>
                       <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">Custom Product</label>
+                        <input class="form-check-input" type="radio" name="typeOfProduct" id="multiType" value="2">
+                        <label class="form-check-label" for="multiType">Multiple Product Types</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" value="" id="existingProd" checked>
+                        <label class="form-check-label" for="existingProd">
+                          Existing Product
+                        </label>
                       </div>
                     </div>
-                     
+                    
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                      <div class="form-floating">
+                        <select class="form-select" id="prodName" aria-label="Product Name">
+                          <!-- <option selected>Open this select menu</option> -->
+                          <option selected value="1">Business Cards</option>
+                          <option value="2">Flyers</option>
+                          <option value="3">Photobooks</option>
+                          <option value="4">Notebooks</option>
+                        </select>
+                        <label for="prodName">Product Name</label>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                      <div class="form-floating">
+                        <input type="number" class="form-control" id="reqQuantity">
+                        <label for="reqQuantity">Quantity<span class="text-danger">*</span></label>
+                      </div>
+                    </div>
+
+                    <div class="col-12 mb-3">
+                      <label class for="size">Size : (Optional) <small class="fst-italic">If your specs has 3 dimensions (e.g. 3cm x 4cm x 5cm), indicate it in the details field)</small></label>
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control" name="reqWidth" id="reqWidth" placeholder="Width" aria-label="Width">
+                        <span class="input-group-text">x</span>
+                        <input type="text" class="form-control" placeholder="Height" name="reqHeight" id="reqHeight" aria-label="Height">
+                        <select class="form-select" id="reqUnit">
+                          <!-- <option selected>Choose...</option> -->
+                          <option selected value="inch">inch</option>
+                          <option value="cm">cm</option>
+                          <option value="mm">mm</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                      <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" name="reqDetails" id="reqDetails" style="height: 100px"></textarea>
+                        <label for="reqDetails">Details</label>
+                      </div>
+                    </div>
+                    <div class="col-12 mb-3">
+                      <button type="submit" class="btn btn-outline-dark">Submit</button>
+                    </div>
             
                   </div>
                 </div>
@@ -411,6 +444,63 @@
     </div>
     <!-- End How to Order Modal -->
 
+    <!-- Start Multiple Product Instruction Modal -->
+    <div class="modal fade" id="instructionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+          <form action="">
+              <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">How to order</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              <div class="form-floating mb-3">
+                  <p class="modal-title" id="exampleModalLabel">
+                  1. Login or register for an account
+                  </p>
+                  <p class="modal-title" id="exampleModalLabel">
+                  2. Choose type of product
+                  </p>
+                  <p class="modal-title" id="exampleModalLabel">
+                  3. Fill out the order information
+                  </p>
+                  <p class="modal-title" id="exampleModalLabel">
+                  4. Submit artwork by: <br>
+                  &nbsp;&nbsp;a. Uploading a design, or<br>
+                  &nbsp;&nbsp;b. Choosing a design from the browser, or<br>
+                  &nbsp;&nbsp;c. Create your own design using the online 
+                  &nbsp;&nbsp;editing tool (applicable in desktop only)
+                  </p>
+                  <p class="modal-title" id="exampleModalLabel">
+                  5. Verify order information and accept the Terms and Conditions (please read before proceeding)
+                  </p>
+                  <p class="modal-title" id="exampleModalLabel">
+                  6. Verify shipping and billing address
+                  </p> 
+                  <p class="modal-title" id="exampleModalLabel">
+                  7. Select shipping type
+                  </p>
+                  <p class="modal-title" id="exampleModalLabel">
+                  8. Confirm order and proceed to checkout
+                  </p>
+                  <p class="modal-title" id="exampleModalLabel">
+                  9. Payment
+                  </p>
+                  <p class="modal-title fst-italic" id="exampleModalLabel">
+                  Note: You will receive an email of your 
+                  order transaction.
+                  </p>
+              </p>
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+          </form>
+          </div>
+      </div>
+      </div>
+      <!-- End Multiple Product Instruction Modal -->
+
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: Bootstrap Bundle with Popper -->
@@ -428,5 +518,6 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.j
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 crossorigin="anonymous"
 ></script>
+<script src="js/script.js"></script>
 </body>
 </html>

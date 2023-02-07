@@ -22,7 +22,7 @@
       src="https://kit.fontawesome.com/133d03ba7a.js"
       crossorigin="anonymous"
     ></script>
-  <title>Printcraffiti Company</title>
+  <title>Printcraffiti</title>
 </head>
 <body>
   <header class="container-fluid">
@@ -59,7 +59,7 @@
             </li>
 
             <li class="nav-item px-3">
-            <a class="nav-link text-dark fw-bold" data-bs-toggle="modal" data-bs-target="#howtoordermodal" aria-current="page" href="">How to order</a>
+            <a class="nav-link text-dark fw-bold" onclick="howToOrder()" href="#">How to order</a>
             </li>
             <li class="nav-item px-3">
             <a class="nav-link text-dark fw-bold" aria-current="page" href="faq.html">FAQs</a>
@@ -369,7 +369,7 @@
                 <a class="nav-link text-secondary" aria-current="page" href="faq.html">FAQs</a>
               </li>
               <li>
-                <a class="nav-link text-secondary"  data-bs-toggle="modal" data-bs-target="#howtoordermodal" aria-current="page" href="">How to order</a>
+                <a class="nav-link text-secondary" onclick="howToOrder()" href="#">How to order</a>
               </li>
               <li>
                 <a class="nav-link text-secondary" aria-current="page" href="">Login | Register</a>
@@ -388,7 +388,7 @@
   <!-- END FOOTER -->
 
     <!-- Start How to Order Modal -->
-    <div class="modal fade" id="howtoordermodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="howtoordermodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
         <form action="">
@@ -441,56 +441,56 @@
         </form>
         </div>
     </div>
-    </div>
+    </div> -->
     <!-- End How to Order Modal -->
 
     <!-- Start Multiple Product Instruction Modal -->
-    <div class="modal fade" id="instructionModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="instructionModal" tabindex="-1" aria-labelledby="instructionModalLabel" aria-hidden="true">
       <div class="modal-dialog">
           <div class="modal-content">
           <form action="">
               <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">How to order</h5>
+              <h5 class="modal-title" id="modalHeading">How to Order</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-              <div class="form-floating mb-3">
-                  <p class="modal-title" id="exampleModalLabel">
+              <div class="form-floating mb-3" id="modalContent">
+                <p class="modal-title" >
                   1. Login or register for an account
-                  </p>
-                  <p class="modal-title" id="exampleModalLabel">
+                </p>
+                <p class="modal-title" >
                   2. Choose type of product
-                  </p>
-                  <p class="modal-title" id="exampleModalLabel">
+                </p>
+                <p class="modal-title">
                   3. Fill out the order information
-                  </p>
-                  <p class="modal-title" id="exampleModalLabel">
+                </p>
+                <p class="modal-title" >
                   4. Submit artwork by: <br>
                   &nbsp;&nbsp;a. Uploading a design, or<br>
                   &nbsp;&nbsp;b. Choosing a design from the browser, or<br>
                   &nbsp;&nbsp;c. Create your own design using the online 
                   &nbsp;&nbsp;editing tool (applicable in desktop only)
-                  </p>
-                  <p class="modal-title" id="exampleModalLabel">
+                </p>
+                <p class="modal-title">
                   5. Verify order information and accept the Terms and Conditions (please read before proceeding)
-                  </p>
-                  <p class="modal-title" id="exampleModalLabel">
+                </p>
+                <p class="modal-title">
                   6. Verify shipping and billing address
-                  </p> 
-                  <p class="modal-title" id="exampleModalLabel">
+                </p> 
+                <p class="modal-title" >
                   7. Select shipping type
-                  </p>
-                  <p class="modal-title" id="exampleModalLabel">
+                </p>
+                <p class="modal-title">
                   8. Confirm order and proceed to checkout
-                  </p>
-                  <p class="modal-title" id="exampleModalLabel">
+                </p>
+                <p class="modal-title">
                   9. Payment
-                  </p>
-                  <p class="modal-title fst-italic" id="exampleModalLabel">
+                </p>
+                <p class="modal-title fst-italic">
                   Note: You will receive an email of your 
                   order transaction.
-                  </p>
-              </p>
+                </p>
+             
               </div>
               <div class="modal-footer">
               <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>

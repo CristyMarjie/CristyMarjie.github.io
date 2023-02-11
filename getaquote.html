@@ -98,215 +98,217 @@
         <div class="carousel-item active">
           <img src="img/calculate.png" class="d-block w-100" alt="Slide 1">
         </div>
+      </div>
+    </div>
   </section>
   <!-- END GET A QUOTE BG -->
 
   <!-- START TOP GET A QUOTE -->
   <section id="getaquote" class="container py-3">
-      <div class="row py-5">
-          <div class="col-12 text-right">
-              <h2 class="fs-1 fw-b text-gray"><strong>Didn’t find what you’re looking for ?</strong></h2>
-              <p class="fw-bold text-orange">
-                  <i>
-                      Get a rough estimate or Request a Quote.
-                  </i>
-              </p>
-              <!-- START TABS -->
-              <!-- START QUICK ESTIMATE -->
-              <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link text-orange active" id="quick-estimate-tab" data-bs-toggle="tab" data-bs-target="#quick_estimate_tab" type="button" role="tab" aria-controls="home" aria-selected="true">Quick Estimate</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link text-orange" id="request-quote" data-bs-toggle="tab" data-bs-target="#request_quote" type="button" role="tab" aria-controls="profile" aria-selected="false">Request a Quote</button>
-                </li>
-              </ul>
-              <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="quick_estimate_tab" role="tabpanel" aria-labelledby="quick-estimate-tab">
-                  <div class="row py-5">
+    <div class="row py-5">
+      <div class="col-12 text-right">
+        <h2 class="fs-1 fw-b text-gray"><strong>Didn’t find what you’re looking for ?</strong></h2>
+        <p class="fw-bold text-orange">
+            <i>
+                Get a rough estimate or Request a Quote.
+            </i>
+        </p>
+        <!-- START TABS -->
+        <!-- START QUICK ESTIMATE -->
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-orange active" id="quick-estimate-tab" data-bs-toggle="tab" data-bs-target="#quick_estimate_tab" type="button" role="tab" aria-controls="home" aria-selected="true">Quick Estimate</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-orange" id="request-quote" data-bs-toggle="tab" data-bs-target="#request_quote" type="button" role="tab" aria-controls="profile" aria-selected="false">Request a Quote</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="quick_estimate_tab" role="tabpanel" aria-labelledby="quick-estimate-tab">
+            <div class="row py-5">
 
-                    <div class="col-12 mb-3">
-                      <div class="form-floating">
-                        <select class="form-select" id="product_name" aria-label="Floating label select example">
-                          <!-- <option selected>Product Name</option> -->
-                          <option value="Photoprint - Standard">Photoprint - Standard</option>
-                          <option value="Photoprint - Laminated">Photoprint - Laminated</option>
-                          <option value="">Rubberized Fridge Magnet - Standard</option>
-                          <option value="Rubberized Fridge Magnet - Laminated">Rubberized Fridge Magnet - Laminated</option>
-                          <option value="PVC ID">PVC ID</option>
-                          <option value="Thank you tag">Thank you tag</option>
-                          <option value="Tarpaulin">Tarpaulin</option>
-                        </select>
-                        <label for="product_name">Product Name</label>
-                      </div>
-                    </div>
-                    
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="quick_estimate_height">
-                        <label for="quick_estimate_height">Height (in)<span class="text-danger">*</span></label>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="quick_estimate_width">
-                        <label for="quick_estimate_width">Width (in)<span class="text-danger">*</span></label>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                      <div class="form-floating">
-                        <input type="number" class="form-control" id="quick_estimate_quantity">
-                        <label for="quick_estimate_quantity">Quantity <span class="text-danger">*</span></label>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="quick_estimate_subtotal" disabled>
-                        <label for="quick_estimate_subtotal">Subtotal</label>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="quick_estimate_discount" disabled>
-                        <label for="quick_estimate_discount">Discount</label>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="quick_estimate_total" disabled>
-                        <label for="quick_estimate_total">Total</label>
-                      </div>
-                    </div>
-            
-                  </div>
-                  <p id="estimate_statement">[Product] with dimensions ________ is [total] if the order quantity is [quantity] pcs and above. </p>
-                </div>
-                <!-- END QUICK ESTIMATE -->
-
-                <!-- START REQUEST QUOTE -->
-                <div class="tab-pane fade" id="request_quote" role="tabpanel" aria-labelledby="request-quote">
-                  <div class="row py-4">
-                    <i>Is there a more specific type of product you want us to quote ? Fill in this form to</i> 
-                    <i class="fw-bold text-gray">Request a Quote.</i><BR><BR>
-                    <h2 class="fs-3 fw-b text-gray"><strong>Customer Details</strong></h2>
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="first_name">
-                        <label for="first_name">First Name<span class="text-danger">*</span></label>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="last_name">
-                        <label for="last_name">Last Name <span class="text-danger">*</span></label>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                      <div class="form-floating">
-                        <input type="email" class="form-control" id="c_email">
-                        <label for="c_email">Email<span class="text-danger">*</span></label>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                      <div class="form-floating">
-                        <input type="number" class="form-control" id="c_number">
-                        <label for="c_number">Contact Number <span class="text-danger">*</span></label>
-                      </div>
-                    </div>
-
-                    <h2 class="fs-3 fw-b text-gray mt-4"><strong>Quote Details</strong></h2>
-                    <div class="col-12 mb-3">
-                      <div class="form-floating">
-                        <input type="text" class="form-control" id="quote_title">
-                        <label for="quote_title">Quote Title<span class="text-danger">*</span></label>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-12 mb-3">
-                      <!-- <label for="prod_type" class="me-3">Product Type</label> -->
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="typeOfProduct" id="oneType" value="1" checked>
-                        <label class="form-check-label" for="oneType">One Type of Product</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="typeOfProduct" id="multiType" value="2">
-                        <label class="form-check-label" for="multiType">Multiple Product Types</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" value="" id="existingProd" checked>
-                        <label class="form-check-label" for="existingProd">
-                          Existing Product
-                        </label>
-                      </div>
-                    </div>
-                    
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                      <div class="form-floating">
-                        <select class="form-select" id="prodName" aria-label="Product Name">
-                          <!-- <option selected>Open this select menu</option> -->
-                          <option selected value="1">Business Cards</option>
-                          <option value="2">Flyers</option>
-                          <option value="3">Photobooks</option>
-                          <option value="4">Notebooks</option>
-                        </select>
-                        <label for="prodName">Product Name</label>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                      <div class="form-floating">
-                        <input type="number" class="form-control" id="reqQuantity">
-                        <label for="reqQuantity">Quantity<span class="text-danger">*</span></label>
-                      </div>
-                    </div>
-
-                    <div class="col-12 mb-3">
-                      <label class for="size">Size : (Optional) <small class="fst-italic">If your specs has 3 dimensions (e.g. 3cm x 4cm x 5cm), indicate it in the details field)</small></label>
-                      <div class="input-group mb-3">
-                        <input type="text" class="form-control" name="reqWidth" id="reqWidth" placeholder="Width" aria-label="Width">
-                        <span class="input-group-text">x</span>
-                        <input type="text" class="form-control" placeholder="Height" name="reqHeight" id="reqHeight" aria-label="Height">
-                        <select class="form-select" id="reqUnit">
-                          <!-- <option selected>Choose...</option> -->
-                          <option selected value="inch">inch</option>
-                          <option value="cm">cm</option>
-                          <option value="mm">mm</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-12 mb-3">
-                      <div class="form-floating">
-                        <textarea class="form-control" placeholder="Leave a comment here" name="reqDetails" id="reqDetails" style="height: 100px"></textarea>
-                        <label for="reqDetails">Details</label>
-                      </div>
-                    </div>
-                    <div class="col-12 mb-3">
-                      <button type="submit" class="btn btn-outline-dark">Submit</button>
-                    </div>
-            
-                  </div>
+              <div class="col-12 mb-3">
+                <div class="form-floating">
+                  <select class="form-select" id="product_name" aria-label="Floating label select example">
+                    <!-- <option selected>Product Name</option> -->
+                    <option value="Photoprint - Standard">Photoprint - Standard</option>
+                    <option value="Photoprint - Laminated">Photoprint - Laminated</option>
+                    <option value="">Rubberized Fridge Magnet - Standard</option>
+                    <option value="Rubberized Fridge Magnet - Laminated">Rubberized Fridge Magnet - Laminated</option>
+                    <option value="PVC ID">PVC ID</option>
+                    <option value="Thank you tag">Thank you tag</option>
+                    <option value="Tarpaulin">Tarpaulin</option>
+                  </select>
+                  <label for="product_name">Product Name</label>
                 </div>
               </div>
-              <!-- START REQUEST QUOTE -->
-              <!-- END TABS -->
+              
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="quick_estimate_height">
+                  <label for="quick_estimate_height">Height (in)<span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="quick_estimate_width">
+                  <label for="quick_estimate_width">Width (in)<span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" id="quick_estimate_quantity">
+                  <label for="quick_estimate_quantity">Quantity <span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="quick_estimate_subtotal" disabled>
+                  <label for="quick_estimate_subtotal">Subtotal</label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="quick_estimate_discount" disabled>
+                  <label for="quick_estimate_discount">Discount</label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="quick_estimate_total" disabled>
+                  <label for="quick_estimate_total">Total</label>
+                </div>
+              </div>
+      
+            </div>
+            <p id="estimate_statement">[Product] with dimensions ________ is [total] if the order quantity is [quantity] pcs and above. </p>
           </div>
+          <!-- END QUICK ESTIMATE -->
+
+          <!-- START REQUEST QUOTE -->
+          <div class="tab-pane fade" id="request_quote" role="tabpanel" aria-labelledby="request-quote">
+            <div class="row py-4">
+              <i>Is there a more specific type of product you want us to quote ? Fill in this form to</i> 
+              <i class="fw-bold text-gray">Request a Quote.</i><BR><BR>
+              <h2 class="fs-3 fw-b text-gray"><strong>Customer Details</strong></h2>
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="first_name">
+                  <label for="first_name">First Name<span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="last_name">
+                  <label for="last_name">Last Name <span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="c_email">
+                  <label for="c_email">Email<span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" id="c_number">
+                  <label for="c_number">Contact Number <span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <h2 class="fs-3 fw-b text-gray mt-4"><strong>Quote Details</strong></h2>
+              <div class="col-12 mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="quote_title">
+                  <label for="quote_title">Quote Title<span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-12 mb-3">
+                <!-- <label for="prod_type" class="me-3">Product Type</label> -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="typeOfProduct" id="oneType" value="1" checked>
+                  <label class="form-check-label" for="oneType">One Type of Product</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="typeOfProduct" id="multiType" value="2">
+                  <label class="form-check-label" for="multiType">Multiple Product Types</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" value="" id="existingProd" checked>
+                  <label class="form-check-label" for="existingProd">
+                    Existing Product
+                  </label>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <select class="form-select" id="prodName" aria-label="Product Name">
+                    <!-- <option selected>Open this select menu</option> -->
+                    <option selected value="1">Business Cards</option>
+                    <option value="2">Flyers</option>
+                    <option value="3">Photobooks</option>
+                    <option value="4">Notebooks</option>
+                  </select>
+                  <label for="prodName">Product Name</label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" id="reqQuantity">
+                  <label for="reqQuantity">Quantity<span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <div class="col-12 mb-3">
+                <label class for="size">Size : (Optional) <small class="fst-italic">If your specs has 3 dimensions (e.g. 3cm x 4cm x 5cm), indicate it in the details field)</small></label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" name="reqWidth" id="reqWidth" placeholder="Width" aria-label="Width">
+                  <span class="input-group-text">x</span>
+                  <input type="text" class="form-control" placeholder="Height" name="reqHeight" id="reqHeight" aria-label="Height">
+                  <select class="form-select" id="reqUnit">
+                    <!-- <option selected>Choose...</option> -->
+                    <option selected value="inch">inch</option>
+                    <option value="cm">cm</option>
+                    <option value="mm">mm</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 mb-3">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" name="reqDetails" id="reqDetails" style="height: 100px"></textarea>
+                  <label for="reqDetails">Details</label>
+                </div>
+              </div>
+              <div class="col-12 mb-3">
+                <button type="submit" class="btn btn-outline-dark">Submit</button>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+            <!-- START REQUEST QUOTE -->
+            <!-- END TABS -->
       </div>
-      <i class="fw-bold text-gray">Quick Estimate</i>
-      <i>immediate price estimate of the product specs you want without waiting for our response as it is system-generated. While </i> 
-      <i class="fw-bold text-gray">Request a Quote</i>
-      <i>is where you can request for a detailed quote of the products not available in the Quick Estimate.</i>
+    </div>
+    <i class="fw-bold text-gray">Quick Estimate</i>
+    <i>immediate price estimate of the product specs you want without waiting for our response as it is system-generated. While </i> 
+    <i class="fw-bold text-gray">Request a Quote</i>
+    <i>is where you can request for a detailed quote of the products not available in the Quick Estimate.</i>
   </section>
 
-    <!-- END GET A QUOTE -->
-    <hr class="dashed-2">
+  <!-- END GET A QUOTE -->
+  <hr class="dashed-2">
   <!-- START FOOTER -->
   <footer class="py-5 text-secondary">
     <div class="container" >

@@ -47,7 +47,7 @@
                 Products
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item text-dark" href="404.html">Business Cards</a></li>
+                <li><a class="dropdown-item text-dark" href="businesscard.html">Business Cards</a></li>
                 <li><a class="dropdown-item text-dark" href="404.html">Notebooks</a></li>
                 <li><a class="dropdown-item text-dark" href="404.html">Letterheads</a></li>
                 <li><a class="dropdown-item text-dark" href="404.html">Calendars</a></li>
@@ -74,7 +74,7 @@
           </ul>
           <div class="d-flex">
           </div>
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark fw-bold">Login | Register</button>
+          <button data-bs-toggle="modal" data-bs-target="#logInform"  class="btn  btn-outline-dark fw-bold">Login | Register</button>
         </div>
 
       </div>
@@ -332,6 +332,32 @@
     </div>
   </footer>
   <!-- END FOOTER -->
+
+  <!-- Modal LOGIN-->
+  <div class="modal fade" id="logInform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form action="">
+            <h2 class="display-6 text-orange text-center"><b><BR>LOGIN</b></h2>
+          <div class="modal-body">
+            <label>Username</label>
+            <div class="form-floating mb-3">
+              <input required type="text" class="form-control underline" id="floatingInput" placeholder="">
+              <label for="floatingInput">type your username</label>
+            </div>
+            <label>Password</label>
+            <div class="form-floating mb-3">
+              <input required type="password" class="form-control" id="floatingPassword" placeholder="">
+              <label for="floatingPassword">type your password</label>
+            </div>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+   <!-- END Modal LOGIN-->
 
   <!-- Start How to Order Modal -->
   <div class="modal fade" id="howtoordermodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

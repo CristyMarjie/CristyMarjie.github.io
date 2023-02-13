@@ -22,27 +22,14 @@
       src="https://kit.fontawesome.com/133d03ba7a.js"
       crossorigin="anonymous"
     ></script>
-  <title>Printcraffiti Company</title>
+  <title>Printcraffiti</title>
 </head>
 <body>
+  <div class="floating-parent">
+    <a href="https://www.m.me/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-messenger text-primary fs-1 m-2"></i></a> 
+  </div>
   <header class="container-fluid">
-    <!-- start top -->
-    <!--div id="top" class="top bg-primary text-light">
-      <div class="container">
-
-        <div class="row py-1">
-          <div class="col-12 col-lg-6">
-            <p class="m-0 "><b>Email: princraffiti@gmail.com</b></p>
-          </div>
-          <div class="col-12 col-lg-6">
-            <p class="text-lg-end m-0"><b>Phone: +63 9469 341998</b></p>
-          </div>
-        </div>
-
-      </div>
-    </div-->
-    <!-- end top -->
-    
+   
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
         <a class="navbar-brand" href="index.html">
@@ -66,28 +53,28 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item text-dark" href="businesscard.html">Business Cards</a></li>
-                <li><a class="dropdown-item text-dark" href="notebook.html">Notebooks</a></li>
-                <li><a class="dropdown-item text-dark" href="letterheads.html">Letterheads</a></li>
-                <li><a class="dropdown-item text-dark" href="calendar.html">Calendars</a></li>
-                <li><a class="dropdown-item text-dark" href="invitation.html">Invitation Cards</a></li>
-                <li><a class="dropdown-item text-dark" href="photoprint.html">Photoprints</a></li>
+                <li><a class="dropdown-item text-dark" href="404.html">Notebooks</a></li>
+                <li><a class="dropdown-item text-dark" href="404.html">Letterheads</a></li>
+                <li><a class="dropdown-item text-dark" href="404.html">Calendars</a></li>
+                <li><a class="dropdown-item text-dark" href="404.html">Invitation Cards</a></li>
+                <li><a class="dropdown-item text-dark" href="404.html">Photoprints</a></li>
               </ul>
             </li>
 
             <li class="nav-item px-3">
-              <a class="nav-link text-dark fw-bold" data-bs-toggle="modal" data-bs-target="#howtoordermodal" aria-current="page" href="">How to order</a>
+            <a class="nav-link text-dark fw-bold" onclick="howToOrder()" href="#">How to order</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link text-dark fw-bold" aria-current="page" href="faq.html">FAQs</a>
+            <a class="nav-link text-dark fw-bold" aria-current="page" href="faq.html">FAQs</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link text-dark fw-bold" aria-current="page" href="getaquote.html">Get a Quote</a>
+            <a class="nav-link text-dark fw-bold" aria-current="page" href="getaquote.html">Get a Quote</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link text-dark fw-bold" aria-current="page" href="contact.html">Contact Us</a>
+            <a class="nav-link text-dark fw-bold" aria-current="page" href="404.html">Contact Us</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link text-dark fw-bold" aria-current="page" href="payment.html">Payment Method</a>
+            <a class="nav-link text-dark fw-bold" aria-current="page" href="404.html">Payment Method</a>
             </li>
             <!--li class="nav-item px-3">
               <a class="nav-link text-dark " aria-current="page" href="#paymentmethods"><b>Login/Register</b></a>
@@ -106,54 +93,214 @@
       </div>
     </nav>
   </header>
+
+  <!-- START C BG -->
+  <section class="container-fluid">
+    <div id="carouselExampleIndicators" class="carousel slide container py-3" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/1.png" class="d-block w-100" alt="Slide 1">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END  -->
+
+  <!-- START TOP -->
+  <section id="getaquote" class="container py-3">
+    <div class="row py-5">
+      <div class="col-12">
+        <h2 class="display-6 text-orange"><b>BUSINESS CARD</b></h2>
+
+        <button data-bs-toggle="modal" data-bs-target="#sampleCard"  class="btn  btn-outline-dark fw-bold ">Samples</button>
+        <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark fw-bold">Design Templates</button>
+
+        <!-- START TABS -->
+        <!-- START --><br><br>
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2 class="display-6 text-orange"><b><BR>PRICES</b></h2>
+          </div>
   
-  <!-- START BUSINESS CARDS -->
-  <section id="service" class="container-fluid" >
-    <div class="container py-3">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2 class="display-6 text-orange" ><b><BR>BUSINESS CARDS</b></h2>
         </div>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-orange active" id="mattepaper-tab" data-bs-toggle="tab" data-bs-target="#mattepaper"
+            type="button" role="tab" aria-controls="home" aria-selected="true">Matte Paper Calling Card</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link text-orange" id="request-quote" data-bs-toggle="tab" data-bs-target="#request_quote"
+            type="button" role="tab" aria-controls="profile" aria-selected="false">Matte Laminated Calling Cards</button>
+          </li>
+        </ul>
 
-        <div class="col-12 text-center">
-          <img  src="img/star.png" alt="star">
-          <img  src="img/star.png" alt="star">
-          <img  src="img/star.png" alt="star">
-          <img  src="img/star.png" alt="star">
-          <img  src="img/star.png" alt="star">
-        </div>
-      </div>
-      <div class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
-        <div class="card d-flex position-relative flex-column">
-            <div class='imgContainer'>
-                <img src='img/bc.jpg'>
-            </div>
-            <div class="content">
-                <h2>Card One</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique, sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh.  Morbi in leo in eros commodo volutpat ac sed dolor.</p>
-            </div>
-        </div>
-        <div class="card d-flex position-relative flex-column">
-            <div class='imgContainer'>
-                <img src=''>
-            </div>
-            <div class="content">
-                <h2>Card Two</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique, sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh.  Morbi in leo in eros commodo volutpat ac sed dolor.</p>
-            </div>
-        </div>
-        <div class="card d-flex position-relative flex-column">
-            <div class='imgContainer'>
-                <img src=''>
-            </div>
-            <div class="content">
-                <h2>Card Three</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget velit tristique, sollicitudin leo viverra, suscipit neque. Aliquam ut facilisis urna, in pretium nibh.  Morbi in leo in eros commodo volutpat ac sed dolor.</p>
-            </div>
-        </div>
-      </div>
-  <!-- END TOP BUSINESS CARDS-->
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="mattepaper" role="tabpanel" aria-labelledby="mattepaper-tab">
+            <div class="row py-5">
 
+              <p class="">
+                Material : Matte Card Paper<br>
+                Size : 2 x 3.5 inches<br>
+                Printing Color : CMYK<br>
+                Processing : 2-3 days
+              </p>
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-12 mb-3">
+                <!-- <label for="prod_type" class="me-3">Product Type</label> -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="typeOfCard" id="oneSide" value="1" checked>
+                  <label class="form-check-label" for="oneSide">One side</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="typeOfCard" id="2-sides" value="2">
+                  <label class="form-check-label" for="2-sides">2-sides / Back to Back</label>
+                </div>
+              </div>
+
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Bundle</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Handle</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                  </tr>
+                </tbody>
+              </table>
+      
+            </div>
+            <p id="estimate_statement">[Product] with dimensions ________ is [total] if the order quantity is [quantity] pcs and above. </p>
+          </div>
+          <!-- END QUICK ESTIMATE -->
+
+          <!-- START REQUEST QUOTE -->
+          <div class="tab-pane fade" id="request_quote" role="tabpanel" aria-labelledby="request-quote">
+            <div class="row py-4">
+              <i>Is there a more specific type of product you want us to quote ? Fill in this form to</i> 
+              <i class="fw-bold text-gray">Request a Quote.</i><BR><BR>
+              <h2 class="fs-3 fw-b text-gray"><strong>Customer Details</strong></h2>
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="first_name">
+                  <label for="first_name">First Name<span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="last_name">
+                  <label for="last_name">Last Name <span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="c_email">
+                  <label for="c_email">Email<span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" id="c_number">
+                  <label for="c_number">Contact Number <span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <h2 class="fs-3 fw-b text-gray mt-4"><strong>Quote Details</strong></h2>
+              <div class="col-12 mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="quote_title">
+                  <label for="quote_title">Quote Title<span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-12 mb-3">
+                <!-- <label for="prod_type" class="me-3">Product Type</label> -->
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="typeOfProduct" id="oneType" value="1" checked>
+                  <label class="form-check-label" for="oneType">One Type of Product</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="typeOfProduct" id="multiType" value="2">
+                  <label class="form-check-label" for="multiType">Multiple Product Types</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" value="" id="existingProd" checked>
+                  <label class="form-check-label" for="existingProd">
+                    Existing Product
+                  </label>
+                </div>
+              </div>
+              
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <select class="form-select" id="prodName" aria-label="Product Name">
+                    <!-- <option selected>Open this select menu</option> -->
+                    <option selected value="1">Business Cards</option>
+                    <option value="2">Flyers</option>
+                    <option value="3">Photobooks</option>
+                    <option value="4">Notebooks</option>
+                  </select>
+                  <label for="prodName">Product Name</label>
+                </div>
+              </div>
+
+              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
+                <div class="form-floating">
+                  <input type="number" class="form-control" id="reqQuantity">
+                  <label for="reqQuantity">Quantity<span class="text-danger">*</span></label>
+                </div>
+              </div>
+
+              <div class="col-12 mb-3">
+                <label class for="size">Size : (Optional) <small class="fst-italic">If your specs has 3 dimensions (e.g. 3cm x 4cm x 5cm), indicate it in the details field)</small></label>
+                <div class="input-group mb-3">
+                  <input type="text" class="form-control" name="reqWidth" id="reqWidth" placeholder="Width" aria-label="Width">
+                  <span class="input-group-text">x</span>
+                  <input type="text" class="form-control" placeholder="Height" name="reqHeight" id="reqHeight" aria-label="Height">
+                  <select class="form-select" id="reqUnit">
+                    <!-- <option selected>Choose...</option> -->
+                    <option selected value="inch">inch</option>
+                    <option value="cm">cm</option>
+                    <option value="mm">mm</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-12 mb-3">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" name="reqDetails" id="reqDetails" style="height: 100px"></textarea>
+                  <label for="reqDetails">Details</label>
+                </div>
+              </div>
+              <div class="col-12 mb-3">
+                <button type="submit" class="btn btn-outline-dark">Submit</button>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+            <!-- START REQUEST QUOTE -->
+            <!-- END TABS -->
+      </div>
+    </div>
+    <i class="fw-bold text-gray">Quick Estimate</i>
+    <i>immediate price estimate of the product specs you want without waiting for our response as it is system-generated. While </i> 
+    <i class="fw-bold text-gray">Request a Quote</i>
+    <i>is where you can request for a detailed quote of the products not available in the Quick Estimate.</i>
+  </section>
+
+  <!-- END GET A QUOTE -->
   <hr class="dashed-2">
   <!-- START FOOTER -->
   <footer class="py-5 text-secondary">
@@ -202,8 +349,8 @@
           <div>
             <h5 class="fw-bold">Stay Connected</h5>
             <ul class="list-unstyled">
-              <a href="https://www.facebook.com/printcraffiti" class=""><i class="fa-brands fa-facebook text-secondary fs-2 m-1"></i></a> 
-              <a href="https://www.m.me/printcraffiti" class=""><i class="fa-brands fa-facebook-messenger text-secondary fs-2 m-1"></i></a> 
+              <a href="https://www.facebook.com/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook text-secondary fs-2 m-1"></i></a> 
+              <a href="https://www.m.me/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-messenger text-secondary fs-2 m-1"></i></a> 
               <a href="" class=""><i class="fa-brands fa-pinterest text-secondary fs-2 m-1"></i></a> 
               <a href="" class=""><i class="fa-brands fa-viber text-secondary fs-2 m-1"></i></a> 
             </ul>
@@ -217,7 +364,7 @@
                 <a class="nav-link text-secondary" aria-current="page" href="faq.html">FAQs</a>
               </li>
               <li>
-                <a class="nav-link text-secondary"  data-bs-toggle="modal" data-bs-target="#howtoordermodal" aria-current="page" href="">How to order</a>
+                <a class="nav-link text-secondary" onclick="howToOrder()" href="#">How to order</a>
               </li>
               <li>
                 <a class="nav-link text-secondary" aria-current="page" href="">Login | Register</a>
@@ -235,62 +382,137 @@
   </footer>
   <!-- END FOOTER -->
 
-<!-- Start How to Order Modal -->
-<div class="modal fade" id="howtoordermodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <form action="">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">How to order</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="form-floating mb-3">
-            <p class="modal-title" id="exampleModalLabel">
-              1. Login or register for an account
-            </p>
-            <p class="modal-title" id="exampleModalLabel">
-              2. Choose type of product
-            </p>
-            <p class="modal-title" id="exampleModalLabel">
-              3. Fill out the order information
-            </p>
-            <p class="modal-title" id="exampleModalLabel">
-              4. Submit artwork by: <br>
-              &nbsp;&nbsp;a. Uploading a design, or<br>
-              &nbsp;&nbsp;b. Choosing a design from the browser, or<br>
-              &nbsp;&nbsp;c. Create your own design using the online 
-              &nbsp;&nbsp;editing tool (applicable in desktop only)
-            </p>
-            <p class="modal-title" id="exampleModalLabel">
-              5. Verify order information and accept the Terms and Conditions (please read before proceeding)
-            </p>
-            <p class="modal-title" id="exampleModalLabel">
-              6. Verify shipping and billing address
-            </p> 
-            <p class="modal-title" id="exampleModalLabel">
-              7. Select shipping type
-            </p>
-            <p class="modal-title" id="exampleModalLabel">
-              8. Confirm order and proceed to checkout
-            </p>
-            <p class="modal-title" id="exampleModalLabel">
-              9. Payment
-            </p>
-            <p class="modal-title fst-italic" id="exampleModalLabel">
-              Note: You will receive an email of your 
-              order transaction.
-            </p>
-          </p>
-        </div>
+  <!-- Button trigger modal -->
+  <!-- Modal -->
+  <div class="modal fade col-12" id="sampleCard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <section id="service" class="container-fluid" >
+            <div class="container py-3">
+              <div class="row">
+                <div class="col-12 text-center">
+                  <h2 class="display-6 text-orange"><b><BR>BUSINESS CARD</b></h2>
+                </div>
+        
+              </div>
+        
+              <div class="row py-5">
+        
+                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
+                  <div class="card card-shadow border p-3 btn-outline-secondary">
+                    <div class="text-center">
+                      <img src="img/bc.jpg" class="card-img-top" alt="">
+                    </div><br>
+                  </div>
+                </div>
+                
+                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
+                  <div class="card card-shadow border p-3 btn-outline-secondary">
+                    <div class="text-center">
+                      <img src="img/nb.jpg" class="card-img-top" alt="">
+                    </div><br>
+                  </div>
+                </div>
+        
+                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
+                  <div class="card card-shadow border p-3 btn-outline-secondary">
+                    <div class="text-center">
+                      <img src="img/lh.jpg" class="card-img-top" alt="">
+                    </div><br>
+                  </div>
+                </div>
+        
+                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
+                  <div class="card card-shadow border p-3 btn-outline-secondary">
+                    <div class="text-center">
+                      <img src="img/c.jpg"class="card-img-top" alt="">
+                    </div><br>
+                  </div>
+                </div>
+        
+                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
+                  <div class="card card-shadow border p-3 btn-outline-secondary">
+                    <div class="text-center">
+                      <img src="img/inv.jpg" class="card-img-top" alt="">
+                    </div><br>
+                  </div>
+                </div>
+        
+                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
+                  <div class="card card-shadow border p-3 btn-outline-secondary">
+                    <div class="text-center">
+                      <img src="img/pp.jpg" class="card-img-top" alt="">
+                    </div><br>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+          </section>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Previous</button>
+          <button type="button" class="btn btn-primary">Next</button>
         </div>
-      </form>
+      </div>
     </div>
   </div>
-</div>
-<!-- End How to Order Modal -->
+
+    <!-- Start Multiple Product Instruction Modal -->
+    <div class="modal fade" id="instructionModal" tabindex="-1" aria-labelledby="instructionModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+          <form action="">
+              <div class="modal-header">
+              <h5 class="modal-title" id="modalHeading">How to Order</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+              <div class="form-floating mb-3" id="modalContent">
+                <p class="modal-title" >
+                  1. Login or register for an account
+                </p>
+                <p class="modal-title" >
+                  2. Choose type of product
+                </p>
+                <p class="modal-title">
+                  3. Fill out the order information
+                </p>
+                <p class="modal-title" >
+                  4. Submit artwork by: <br>
+                  &nbsp;&nbsp;a. Uploading a design, or<br>
+                  &nbsp;&nbsp;b. Choosing a design from the browser, or<br>
+                  &nbsp;&nbsp;c. Create your own design using the online 
+                  &nbsp;&nbsp;editing tool (applicable in desktop only)
+                </p>
+                <p class="modal-title">
+                  5. Verify order information and accept the Terms and Conditions (please read before proceeding)
+                </p>
+                <p class="modal-title">
+                  6. Verify shipping and billing address
+                </p> 
+                <p class="modal-title" >
+                  7. Select shipping type
+                </p>
+                <p class="modal-title">
+                  8. Confirm order and proceed to checkout
+                </p>
+                <p class="modal-title">
+                  9. Payment
+                </p>
+                <p class="modal-title fst-italic">
+                  Note: You will receive an email of your 
+                  order transaction.
+                </p>
+             
+              </div>
+              <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+          </form>
+          </div>
+      </div>
+      </div>
+      <!-- End Multiple Product Instruction Modal -->
 
 <!-- Optional JavaScript; choose one of the two! -->
 
@@ -309,5 +531,6 @@ src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.j
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 crossorigin="anonymous"
 ></script>
+<script src="js/script.js"></script>
 </body>
 </html>

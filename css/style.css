@@ -28,3 +28,11 @@
 
 
 /* --END BUSINESS CARDS-- */
+
+.floating-parent{
+    position: fixed;
+    bottom: 8%;
+    right: 20px;
+    text-align: center;
+}
+

@@ -74,7 +74,7 @@
           </ul>
           <div class="d-flex">
           </div>
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark fw-bold">Login | Register</button>
+          <a class="nav-link text-dark fw-bold" data-bs-toggle="modal" data-bs-target="#logInform" aria-current="page" href="">Login</a>
         </div>
 
       </div>
@@ -333,6 +333,43 @@
   </footer>
   <!-- END FOOTER -->
 
+  <!-- Start Login Modal -->
+  <div class="modal fade" id="logInform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">LOGIN</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Username</label>
+              <input type="text" class="form-control" placeholder="type your username">
+            </div>
+            <div class="mb-3">
+              <label class="col-form-label">Password</label>
+              <input type="password" class="form-control" id="pword">
+            </div>
+          </form>
+
+        <div class="option">or Connect With Social Media</div>
+        <div class="twitter">
+          <a href="#"><i class="fab fa-twitter"></i>Sign in With Twitter</a>
+        </div>
+        <div class="facebook">
+          <a href="#"><i class="fab fa-facebook-f"></i>Sign in With Facebook</a>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Login Modal -->
+
   <!-- Start How to Order Modal -->
   <div class="modal fade" id="howtoordermodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -389,6 +426,7 @@
     </div>
   </div>
   <!-- End How to Order Modal -->
+
 
   <!-- Bootstrap JS -->
   <script

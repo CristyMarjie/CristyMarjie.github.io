@@ -112,14 +112,14 @@
       <div class="col-12">
         <h2 class="display-6 text-orange"><b>BUSINESS CARD</b></h2>
 
-        <button data-bs-toggle="modal" data-bs-target="#sampleCard"  class="btn  btn-outline-dark fw-bold ">Samples</button>
-        <button data-bs-toggle="modal" data-bs-target="#exampleModal"  class="btn  btn-outline-dark fw-bold">Design Templates</button>
+        <a class="btn btn-lg btn-outline-secondary" href="https://www.facebook.com/media/set/?set=a.594556218661337&type=3"><i class="fa fa-folder-open"></i>&nbsp;Gallery</a>
+        <button data-bs-toggle="modal" data-bs-target="#designtemplates"  class="btn btn-lg btn-outline-dark fw-bold ">Design Templates</button>
 
         <!-- START TABS -->
         <!-- START --><br><br>
         <div class="row">
-          <div class="col-12 text-center">
-            <h2 class="display-6 text-orange"><b><BR>PRICES</b></h2>
+          <div class="col-12">
+            <h2 class="display-6 text-orange text-center"><b><BR>PRICES</b></h2>
           </div>
   
         </div>
@@ -154,7 +154,7 @@
                   <input class="form-check-input" type="radio" name="typeOfCard" id="2-sides" value="2">
                   <label class="form-check-label" for="2-sides">2-sides / Back to Back</label>
                 </div>
-              </div>
+              </div><br><br>
 
               <table class="table table-striped">
                 <thead>
@@ -167,140 +167,50 @@
                 <tbody>
                   <tr>
                     <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
+                    <td>100</td>
+                    <td>350</td>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
+                    <td>200</td>
+                    <td>630</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>300</td>
+                    <td>945</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>400</td>
+                    <td>1,260</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>500</td>
+                    <td>1,575</td>
                   </tr>
                 </tbody>
               </table>
       
             </div>
-            <p id="estimate_statement">[Product] with dimensions ________ is [total] if the order quantity is [quantity] pcs and above. </p>
+            
           </div>
-          <!-- END QUICK ESTIMATE -->
-
-          <!-- START REQUEST QUOTE -->
-          <div class="tab-pane fade" id="request_quote" role="tabpanel" aria-labelledby="request-quote">
-            <div class="row py-4">
-              <i>Is there a more specific type of product you want us to quote ? Fill in this form to</i> 
-              <i class="fw-bold text-gray">Request a Quote.</i><BR><BR>
-              <h2 class="fs-3 fw-b text-gray"><strong>Customer Details</strong></h2>
-              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="first_name">
-                  <label for="first_name">First Name<span class="text-danger">*</span></label>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="last_name">
-                  <label for="last_name">Last Name <span class="text-danger">*</span></label>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                <div class="form-floating">
-                  <input type="email" class="form-control" id="c_email">
-                  <label for="c_email">Email<span class="text-danger">*</span></label>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                <div class="form-floating">
-                  <input type="number" class="form-control" id="c_number">
-                  <label for="c_number">Contact Number <span class="text-danger">*</span></label>
-                </div>
-              </div>
-
-              <h2 class="fs-3 fw-b text-gray mt-4"><strong>Quote Details</strong></h2>
-              <div class="col-12 mb-3">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="quote_title">
-                  <label for="quote_title">Quote Title<span class="text-danger">*</span></label>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-12 mb-3">
-                <!-- <label for="prod_type" class="me-3">Product Type</label> -->
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="typeOfProduct" id="oneType" value="1" checked>
-                  <label class="form-check-label" for="oneType">One Type of Product</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="typeOfProduct" id="multiType" value="2">
-                  <label class="form-check-label" for="multiType">Multiple Product Types</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="checkbox" value="" id="existingProd" checked>
-                  <label class="form-check-label" for="existingProd">
-                    Existing Product
-                  </label>
-                </div>
-              </div>
-              
-              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                <div class="form-floating">
-                  <select class="form-select" id="prodName" aria-label="Product Name">
-                    <!-- <option selected>Open this select menu</option> -->
-                    <option selected value="1">Business Cards</option>
-                    <option value="2">Flyers</option>
-                    <option value="3">Photobooks</option>
-                    <option value="4">Notebooks</option>
-                  </select>
-                  <label for="prodName">Product Name</label>
-                </div>
-              </div>
-
-              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-6 mb-3">
-                <div class="form-floating">
-                  <input type="number" class="form-control" id="reqQuantity">
-                  <label for="reqQuantity">Quantity<span class="text-danger">*</span></label>
-                </div>
-              </div>
-
-              <div class="col-12 mb-3">
-                <label class for="size">Size : (Optional) <small class="fst-italic">If your specs has 3 dimensions (e.g. 3cm x 4cm x 5cm), indicate it in the details field)</small></label>
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control" name="reqWidth" id="reqWidth" placeholder="Width" aria-label="Width">
-                  <span class="input-group-text">x</span>
-                  <input type="text" class="form-control" placeholder="Height" name="reqHeight" id="reqHeight" aria-label="Height">
-                  <select class="form-select" id="reqUnit">
-                    <!-- <option selected>Choose...</option> -->
-                    <option selected value="inch">inch</option>
-                    <option value="cm">cm</option>
-                    <option value="mm">mm</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-12 mb-3">
-                <div class="form-floating">
-                  <textarea class="form-control" placeholder="Leave a comment here" name="reqDetails" id="reqDetails" style="height: 100px"></textarea>
-                  <label for="reqDetails">Details</label>
-                </div>
-              </div>
-              <div class="col-12 mb-3">
-                <button type="submit" class="btn btn-outline-dark">Submit</button>
-              </div>
-      
+          
+          <div class="row">
+            <div class="col-12 text-center">
+              <h2 class="display-6 text-orange"><b><BR>Orientation</b></h2>
             </div>
+    
           </div>
         </div>
-            <!-- START REQUEST QUOTE -->
+        
             <!-- END TABS -->
       </div>
     </div>
-    <i class="fw-bold text-gray">Quick Estimate</i>
-    <i>immediate price estimate of the product specs you want without waiting for our response as it is system-generated. While </i> 
-    <i class="fw-bold text-gray">Request a Quote</i>
-    <i>is where you can request for a detailed quote of the products not available in the Quick Estimate.</i>
+
   </section>
 
-  <!-- END GET A QUOTE -->
   <hr class="dashed-2">
   <!-- START FOOTER -->
   <footer class="py-5 text-secondary">
@@ -383,17 +293,16 @@
   <!-- END FOOTER -->
 
   <!-- Button trigger modal -->
-  <!-- Modal -->
-  <div class="modal fade col-12" id="sampleCard" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+  <!-- START MODAL DESIGN TEMPLATES -->
+  <div class="modal fade col-12" id="designtemplates" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
       <div class="modal-content">
           <section id="service" class="container-fluid" >
             <div class="container py-3">
               <div class="row">
                 <div class="col-12 text-center">
-                  <h2 class="display-6 text-orange"><b><BR>BUSINESS CARD</b></h2>
+                  <h2 class="display-6 text-orange"><b><BR>Design Templates</b></h2>
                 </div>
-        
               </div>
         
               <div class="row py-5">
@@ -403,59 +312,101 @@
                     <div class="text-center">
                       <img src="img/bc.jpg" class="card-img-top" alt="">
                     </div><br>
+                    <div class="">
+                      <h5 class="text-uppercase py-2">MT1</h5>
+                    </div>
                   </div>
                 </div>
-                
                 <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
                   <div class="card card-shadow border p-3 btn-outline-secondary">
                     <div class="text-center">
-                      <img src="img/nb.jpg" class="card-img-top" alt="">
+                      <img src="img/bc.jpg" class="card-img-top" alt="">
                     </div><br>
+                    <div class="">
+                      <h5 class="text-uppercase py-2">MT2</h5>
+                    </div>
                   </div>
                 </div>
-        
                 <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
                   <div class="card card-shadow border p-3 btn-outline-secondary">
                     <div class="text-center">
-                      <img src="img/lh.jpg" class="card-img-top" alt="">
+                      <img src="img/bc.jpg" class="card-img-top" alt="">
                     </div><br>
+                    <div class="">
+                      <h5 class="text-uppercase py-2">MT3</h5>
+                    </div>
                   </div>
                 </div>
-        
                 <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
                   <div class="card card-shadow border p-3 btn-outline-secondary">
                     <div class="text-center">
-                      <img src="img/c.jpg"class="card-img-top" alt="">
+                      <img src="img/bc.jpg" class="card-img-top" alt="">
                     </div><br>
+                    <div class="">
+                      <h5 class="text-uppercase py-2">MT4</h5>
+                    </div>
                   </div>
                 </div>
-        
                 <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
                   <div class="card card-shadow border p-3 btn-outline-secondary">
                     <div class="text-center">
-                      <img src="img/inv.jpg" class="card-img-top" alt="">
+                      <img src="img/bc.jpg" class="card-img-top" alt="">
                     </div><br>
+                    <div class="">
+                      <h5 class="text-uppercase py-2">MT5</h5>
+                    </div>
                   </div>
                 </div>
-        
                 <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
                   <div class="card card-shadow border p-3 btn-outline-secondary">
                     <div class="text-center">
-                      <img src="img/pp.jpg" class="card-img-top" alt="">
+                      <img src="img/bc.jpg" class="card-img-top" alt="">
                     </div><br>
+                    <div class="">
+                      <h5 class="text-uppercase py-2">MT6</h5>
+                    </div>
                   </div>
                 </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
+                  <div class="card card-shadow border p-3 btn-outline-secondary">
+                    <div class="text-center">
+                      <img src="img/bc.jpg" class="card-img-top" alt="">
+                    </div><br>
+                    <div class="">
+                      <h5 class="text-uppercase py-2">MT7</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
+                  <div class="card card-shadow border p-3 btn-outline-secondary">
+                    <div class="text-center">
+                      <img src="img/bc.jpg" class="card-img-top" alt="">
+                    </div><br>
+                    <div class="">
+                      <h5 class="text-uppercase py-2">MT8</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
+                  <div class="card card-shadow border p-3 btn-outline-secondary">
+                    <div class="text-center">
+                      <img src="img/bc.jpg" class="card-img-top" alt="">
+                    </div><br>
+                    <div class="">
+                      <h5 class="text-uppercase py-2">MT9</h5>
+                    </div>
+                  </div>
+                </div>                
         
               </div>
             </div>
           </section>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Previous</button>
-          <button type="button" class="btn btn-primary">Next</button>
-        </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger rounded-pill" data-bs-dismiss="modal">Close</button>
+          </div>
       </div>
     </div>
-  </div>
+  </div><!-- END MODAL DESIGN TEMPLATES -->
 
     <!-- Start Multiple Product Instruction Modal -->
     <div class="modal fade" id="instructionModal" tabindex="-1" aria-labelledby="instructionModalLabel" aria-hidden="true">

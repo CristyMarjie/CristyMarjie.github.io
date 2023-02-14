@@ -74,8 +74,10 @@
           </ul>
           <div class="d-flex">
           </div>
-          <button data-bs-toggle="modal" data-bs-target="#logInform"  class="btn  btn-outline-dark fw-bold">Login | Register</button>
+          <button data-bs-toggle="modal" data-bs-target="#logInform"  class="btn  btn-outline fw-bold">Login</button>|
+          <button data-bs-toggle="modal" data-bs-target="#signUp"  class="btn  btn-outline fw-bold">Signup</button>
         </div>
+        
 
       </div>
     </nav>
@@ -318,7 +320,7 @@
                 <a class="nav-link text-secondary"  data-bs-toggle="modal" data-bs-target="#howtoordermodal" aria-current="page" href="">How to order</a>
               </li>
               <li>
-                <a class="nav-link text-secondary" aria-current="page" href="">Login | Register</a>
+                <a class="nav-link text-secondary" aria-current="page" href="">Login | Signup</a>
               </li>
             </ul>
           </div>
@@ -332,6 +334,63 @@
     </div>
   </footer>
   <!-- END FOOTER -->
+
+    <!-- STARTS Modal SIGNUP-->
+    <div class="modal fade" id="signUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog  text-center" >
+        <div class="modal-content" style="border-radius: 15px;">
+          <form action="" class="col-11 align-self-center">
+            <BR><h5 class="display-6 text-gray text-center">
+            <!--img width="60px" src="img/logobw.png" alt=""-->
+            <b><BR>CREATE ACCOUNT</b></h5>
+              <label>Please enter details to create account!</label>
+            <div class="modal-body">
+              
+              <div class="row g-2">
+
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid"required>
+                    <label for="floatingInputGrid">Firstname</label>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid"required>
+                    <label for="floatingInputGrid">Lastname</label>
+                  </div>
+                </div>
+                <div class="form-floating mb-3 ">
+                  <input required type="text" class="form-control" id="floatingInput" placeholder="" required>
+                  <label>Username</label>
+                </div>
+                <div class="form-floating mb-3 ">
+                  <input required type="email" class="form-control" id="floatingInput" placeholder="" required>
+                  <label>Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input required type="password" class="form-control" id="floatingPassword" placeholder="" required>
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input required type="password" class="form-control" id="floatingPassword" placeholder="" required>
+                  <label for="floatingPassword">Re-type password</label>
+                </div>
+                  
+              </div>
+              <button type="submit" class="btn btn-dark d-grid gap-2 col-12 mx-auto btn-med">Create Account</button><BR><BR>
+              Already have an account? <a class="btn btn-sm rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#logInform">Login</a><BR><BR>
+  
+              <a href="https://www.facebook.com/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook text-secondary fs-4 m-1"></i></a> 
+                <a href="https://www.m.me/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-messenger text-secondary fs-4 m-1"></i></a> 
+                <a href="" class=""><i class="fa-brands fa-pinterest text-secondary fs-4 m-1"></i></a> 
+                <a href="" class=""><i class="fa-brands fa-viber text-secondary fs-4 m-1"></i></a> 
+            </div>
+          </form>
+        </div>
+      </div>
+    </div><!-- END Modal SIGNUP-->
+
 
   <!-- Modal LOGIN-->
   <div class="modal fade" id="logInform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -364,15 +423,13 @@
             </div-->
             <button type="submit" class="btn btn-dark rounded-pill d-grid gap-2 col-6 mx-auto btn-med">Login</button><BR><BR>
             <div class="">Forgot Password?</div>  
-            Not a member? <a class="btn btn-outline-secondary btn-sm rounded-pill fw-bold" href="#">Signup</a><BR><BR>
+            Don't have an account? <a class="btn btn-sm rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#signUp">Create Account</a><BR><BR>
 
             <a href="https://www.facebook.com/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook text-secondary fs-4 m-1"></i></a> 
               <a href="https://www.m.me/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-messenger text-secondary fs-4 m-1"></i></a> 
               <a href="" class=""><i class="fa-brands fa-pinterest text-secondary fs-4 m-1"></i></a> 
               <a href="" class=""><i class="fa-brands fa-viber text-secondary fs-4 m-1"></i></a> 
           </div>
-
-
         </form>
       </div>
     </div>

@@ -78,5 +78,3 @@ howToOrder = () => {
             order transaction.
         </p>`;
 };
-
-

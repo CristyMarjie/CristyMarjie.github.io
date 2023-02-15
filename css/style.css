@@ -21,6 +21,27 @@
     background-color: #E85325;
 }
 
+.myBtn {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.myOrange {
+  border-color: #E85325;
+  border-radius: 5px;
+  color: #E85325;
+}
+
+.myOrange:hover {
+  background-color: #E85325;
+  color: white;
+  transition: all 0.3s ease;
+}
+
 .card-shadow:hover{
     box-shadow: 3px 1px 5px 5px rgba(0, 0, 0, 0.2);
     transform: scale(1.1);

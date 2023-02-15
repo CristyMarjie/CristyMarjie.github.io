@@ -31,7 +31,6 @@ radioMulti.addEventListener("click", () => {
     4. We will respond to you using the email you provided within 48 hours or less.
     </p>`;
     
-    // show the output:
     // output.innerText = selectedSize ? `You selected ${selectedSize}` : `You haven't selected any size`;
 });
 

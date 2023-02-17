@@ -53,7 +53,7 @@
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item text-dark" href="businesscard.html">Business Cards</a></li>
-                <li><a class="dropdown-item text-dark" href="404.html">Notebooks</a></li>
+                <li><a class="dropdown-item text-dark" href="notebook.html">Notebooks</a></li>
                 <li><a class="dropdown-item text-dark" href="404.html">Letterheads</a></li>
                 <li><a class="dropdown-item text-dark" href="404.html">Calendars</a></li>
                 <li><a class="dropdown-item text-dark" href="404.html">Mugs</a></li>
@@ -62,7 +62,7 @@
             </li>
 
             <li class="nav-item px-3">
-            <a class="nav-link text-dark fw-bold" onclick="howToOrder()" href="#">How to order</a>
+            <a class="nav-link text-dark fw-bold" data-bs-toggle="modal" data-bs-target="#howtoordermodal" aria-current="page" href="#">How to order</a>
             </li>
             <li class="nav-item px-3">
             <a class="nav-link text-dark fw-bold" aria-current="page" href="faq.html">FAQs</a>
@@ -71,10 +71,10 @@
             <a class="nav-link text-dark fw-bold" aria-current="page" href="getaquote.html">Get a Quote</a>
             </li>
             <li class="nav-item px-3">
-            <a class="nav-link text-dark fw-bold" aria-current="page" href="404.html">Contact Us</a>
+            <a class="nav-link text-dark fw-bold" aria-current="page" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item px-3">
-            <a class="nav-link text-dark fw-bold" aria-current="page" href="404.html">Payment Method</a>
+            <a class="nav-link text-dark fw-bold" aria-current="page" href="paymentmethod.html">Payment Method</a>
             </li>
             <!--li class="nav-item px-3">
               <a class="nav-link text-dark " aria-current="page" href="#paymentmethods"><b>Login/Register</b></a>
@@ -106,8 +106,11 @@
   </section> -->
   <!-- END  -->
 
-   <!-- START TOP PRINT PRODUCTS -->
-   <section id="service" class="container-fluid d-none d-sm-block" >
+  
+
+   <!-- START BUSINESS CARD -->
+   <!--section id="service" class="container-fluid d-none d-sm-block" ></section-->
+   <section id="service" class="container-fluid" >
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -116,8 +119,8 @@
       </div>
     </div>
   </section>
-  <!-- END TOP PRINT PRODUCTS -->
-
+  <!-- END BUSINESS CARD -->
+  
   <!-- START TOP -->
   <section id="getaquote" class="container py-3">
     <div class="row py-5">
@@ -270,9 +273,13 @@
             </div>
             
           </div>
+          <BR>
           <div class="row">
             <div class="col-12 text-center">
-              <h2 class="display-6 text-gray"><b>Orientation</b></h2>
+              <h2 class="display-6 text-gray"><b>ORIENTATION</b></h2>
+              <div class="text-center">
+                <img src="img/orientation.png" width="650px" alt="">
+              </div>
             </div>
     
           </div>
@@ -318,13 +325,13 @@
             <h5 class="fw-bold">Payment Option</h5>
             <ul class="list-unstyled">
               <li>
-                <a class="nav-link text-secondary" aria-current="page" href="">Bank Transfer</a>
+                <a class="nav-link text-secondary" aria-current="page" href="paymentmethod.html">Bank Transfer</a>
               </li>
               <li>
-                <a class="nav-link text-secondary"  aria-current="page" href="">Gcash</a>
+                <a class="nav-link text-secondary"  aria-current="page" href="paymentmethod.html">Gcash</a>
               </li>
               <li>
-                <a class="nav-link text-secondary" aria-current="page" href="">Maya</a>
+                <a class="nav-link text-secondary" aria-current="page" href="paymentmethod.html">Maya</a>
               </li>
             </ul>
           </div>
@@ -348,10 +355,13 @@
                 <a class="nav-link text-secondary" aria-current="page" href="faq.html">FAQs</a>
               </li>
               <li>
-                <a class="nav-link text-secondary" onclick="howToOrder()" href="#">How to order</a>
+                <a class="nav-link text-secondary" data-bs-toggle="modal" data-bs-target="#howtoordermodal" aria-current="page" href="">How to order</a>
               </li>
               <li>
-                <a class="nav-link text-secondary" aria-current="page" href="">Login | Register</a>
+                <a class="nav-link text-secondary" aria-current="page" data-bs-toggle="modal" data-bs-target="#logInform" href="">Login</a>
+              </li>
+              <li>
+                <a class="nav-link text-secondary" aria-current="page" data-bs-toggle="modal" data-bs-target="#signUp" href="">Signup</a>
               </li>
             </ul>
           </div>
@@ -384,7 +394,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
                   <div class="card card-shadow border p-3 btn-outline-secondary">
                     <div class="text-center">
-                      <img src="img/bc.jpg" class="card-img-top" alt="">
+                      <img src="img/c1.png" class="card-img-top" alt="">
                     </div><br>
                     <div class="">
                       <h5 class="text-uppercase py-2">MT1</h5>
@@ -394,7 +404,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
                   <div class="card card-shadow border p-3 btn-outline-secondary">
                     <div class="text-center">
-                      <img src="img/bc.jpg" class="card-img-top" alt="">
+                      <img src="img/c2.png" class="card-img-top" alt="">
                     </div><br>
                     <div class="">
                       <h5 class="text-uppercase py-2">MT2</h5>
@@ -404,7 +414,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
                   <div class="card card-shadow border p-3 btn-outline-secondary">
                     <div class="text-center">
-                      <img src="img/bc.jpg" class="card-img-top" alt="">
+                      <img src="img/c3.png" class="card-img-top" alt="">
                     </div><br>
                     <div class="">
                       <h5 class="text-uppercase py-2">MT3</h5>
@@ -414,7 +424,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
                   <div class="card card-shadow border p-3 btn-outline-secondary">
                     <div class="text-center">
-                      <img src="img/bc.jpg" class="card-img-top" alt="">
+                      <img src="img/c4.png" class="card-img-top" alt="">
                     </div><br>
                     <div class="">
                       <h5 class="text-uppercase py-2">MT4</h5>
@@ -424,7 +434,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
                   <div class="card card-shadow border p-3 btn-outline-secondary">
                     <div class="text-center">
-                      <img src="img/bc.jpg" class="card-img-top" alt="">
+                      <img src="img/c5.png" class="card-img-top" alt="">
                     </div><br>
                     <div class="">
                       <h5 class="text-uppercase py-2">MT5</h5>
@@ -434,7 +444,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
                   <div class="card card-shadow border p-3 btn-outline-secondary">
                     <div class="text-center">
-                      <img src="img/bc.jpg" class="card-img-top" alt="">
+                      <img src="img/c6.png" class="card-img-top" alt="">
                     </div><br>
                     <div class="">
                       <h5 class="text-uppercase py-2">MT6</h5>
@@ -444,7 +454,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
                   <div class="card card-shadow border p-3 btn-outline-secondary">
                     <div class="text-center">
-                      <img src="img/bc.jpg" class="card-img-top" alt="">
+                      <img src="img/c7.png" class="card-img-top" alt="">
                     </div><br>
                     <div class="">
                       <h5 class="text-uppercase py-2">MT7</h5>
@@ -454,7 +464,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
                   <div class="card card-shadow border p-3 btn-outline-secondary">
                     <div class="text-center">
-                      <img src="img/bc.jpg" class="card-img-top" alt="">
+                      <img src="img/c8.png" class="card-img-top" alt="">
                     </div><br>
                     <div class="">
                       <h5 class="text-uppercase py-2">MT8</h5>
@@ -464,7 +474,7 @@
                 <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
                   <div class="card card-shadow border p-3 btn-outline-secondary">
                     <div class="text-center">
-                      <img src="img/bc.jpg" class="card-img-top" alt="">
+                      <img src="img/c9.png" class="card-img-top" alt="">
                     </div><br>
                     <div class="">
                       <h5 class="text-uppercase py-2">MT9</h5>
@@ -482,62 +492,151 @@
     </div>
   </div><!-- END MODAL DESIGN TEMPLATES -->
 
-    <!-- Start Multiple Product Instruction Modal -->
-    <div class="modal fade" id="instructionModal" tabindex="-1" aria-labelledby="instructionModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-          <form action="">
-              <div class="modal-header">
-              <h5 class="modal-title" id="modalHeading">How to Order</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <!-- STARTS Modal SIGNUP-->
+    <div class="modal fade" id="signUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog  text-center" >
+        <div class="modal-content">
+          <button type="button" class="btn-close m-3 align-self-end" data-bs-dismiss="modal" aria-label="Close"></button>
+          <form action="" class="col-11 align-self-center">
+            <h5 class="display-6 text-gray text-center">
+            <b>CREATE ACCOUNT</b></h5>
+              <label>Please enter details to create account!</label>
+            <div class="modal-body">
+              
+              <div class="row g-2">
+
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid"required>
+                    <label for="floatingInputGrid">Firstname</label>
+                  </div>
+                </div>
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid"required>
+                    <label for="floatingInputGrid">Lastname</label>
+                  </div>
+                </div>
+                <div class="form-floating mb-3 ">
+                  <input required type="text" class="form-control" id="floatingInput" placeholder="" required>
+                  <label>Username</label>
+                </div>
+                <div class="form-floating mb-3 ">
+                  <input required type="email" class="form-control" id="floatingInput" placeholder="" required>
+                  <label>Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input required type="password" class="form-control" id="floatingPassword" placeholder="" required>
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input required type="password" class="form-control" id="floatingPassword" placeholder="" required>
+                  <label for="floatingPassword">Re-type password</label>
+                </div>
+                  
               </div>
-              <div class="modal-body">
-              <div class="form-floating mb-3" id="modalContent">
-                <p class="modal-title" >
-                  1. Login or register for an account
-                </p>
-                <p class="modal-title" >
-                  2. Choose type of product
-                </p>
-                <p class="modal-title">
-                  3. Fill out the order information
-                </p>
-                <p class="modal-title" >
-                  4. Submit artwork by: <br>
-                  &nbsp;&nbsp;a. Uploading a design, or<br>
-                  &nbsp;&nbsp;b. Choosing a design from the browser, or<br>
-                  &nbsp;&nbsp;c. Create your own design using the online 
-                  &nbsp;&nbsp;editing tool (applicable in desktop only)
-                </p>
-                <p class="modal-title">
-                  5. Verify order information and accept the Terms and Conditions (please read before proceeding)
-                </p>
-                <p class="modal-title">
-                  6. Verify shipping and billing address
-                </p> 
-                <p class="modal-title" >
-                  7. Select shipping type
-                </p>
-                <p class="modal-title">
-                  8. Confirm order and proceed to checkout
-                </p>
-                <p class="modal-title">
-                  9. Payment
-                </p>
-                <p class="modal-title fst-italic">
-                  Note: You will receive an email of your 
-                  order transaction.
-                </p>
-             
-              </div>
-              <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
+              <button type="submit" class="myBtn myOrange d-grid gap-2 col-6 mx-auto btn btn-md">Create Account</button><BR><BR>
+              Already have an account? <a class="btn btn-sm rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#logInform">Login</a><BR><BR>
+  
+              <!-- <a href="https://www.facebook.com/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook text-secondary fs-4 m-1"></i></a> 
+              <a href="https://www.m.me/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-messenger text-secondary fs-4 m-1"></i></a> 
+              <a href="" class=""><i class="fa-brands fa-pinterest text-secondary fs-4 m-1"></i></a> 
+              <a href="" class=""><i class="fa-brands fa-viber text-secondary fs-4 m-1"></i></a>  -->
+            </div>
           </form>
+        </div>
+      </div>
+    </div><!-- END Modal SIGNUP-->
+
+
+  <!-- Modal LOGIN-->
+  <div class="modal fade" id="logInform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  text-center" >
+      <div class="modal-content">
+        <button type="button" class="btn-close m-3 align-self-end" data-bs-dismiss="modal" aria-label="Close"></button>
+        <form action="" class="col-11 align-self-center">
+          <h5 class="display-6 text-gray text-center">
+          <b>LOGIN</b></h5>
+          <div class="modal-body">
+            <div class="form-floating mb-3 ">
+              <input required type="text" class="form-control" id="floatingInput" placeholder="">
+              <label>Username</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input required type="password" class="form-control" id="floatingPassword" placeholder="">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button type="submit" class="myBtn myOrange d-grid gap-2 col-6 mx-auto btn btn-md">Login</button><BR><BR>
+            <div class="">Forgot Password?</div>  
+            Don't have an account? <a class="btn btn-sm rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#signUp">Create Account</a><BR><BR>
+
+            <!-- <a href="https://www.facebook.com/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook text-secondary fs-4 m-1"></i></a> 
+            <a href="https://www.m.me/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-messenger text-secondary fs-4 m-1"></i></a> 
+            <a href="" class=""><i class="fa-brands fa-pinterest text-secondary fs-4 m-1"></i></a> 
+            <a href="" class=""><i class="fa-brands fa-viber text-secondary fs-4 m-1"></i></a>  -->
           </div>
+        </form>
       </div>
+    </div>
+  </div>
+   <!-- END Modal LOGIN-->
+
+  <!-- Start How to Order Modal -->
+  <div class="modal fade" id="howtoordermodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">How to order</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <p class="modal-title" id="exampleModalLabel">
+                1. Login or register for an account
+              </p>
+              <p class="modal-title" id="exampleModalLabel">
+                2. Choose type of product
+              </p>
+              <p class="modal-title" id="exampleModalLabel">
+                3. Fill out the order information
+              </p>
+              <p class="modal-title" id="exampleModalLabel">
+                4. Submit artwork by: <br>
+                &nbsp;&nbsp;a. Uploading a design, or<br>
+                &nbsp;&nbsp;b. Choosing a design from the browser, or<br>
+                &nbsp;&nbsp;c. Create your own design using the online 
+                &nbsp;&nbsp;editing tool (applicable in desktop only)
+              </p>
+              <p class="modal-title" id="exampleModalLabel">
+                5. Verify order information and accept the Terms and Conditions (please read before proceeding)
+              </p>
+              <p class="modal-title" id="exampleModalLabel">
+                6. Verify shipping and billing address
+              </p> 
+              <p class="modal-title" id="exampleModalLabel">
+                7. Select shipping type
+              </p>
+              <p class="modal-title" id="exampleModalLabel">
+                8. Confirm order and proceed to checkout
+              </p>
+              <p class="modal-title" id="exampleModalLabel">
+                9. Payment
+              </p>
+              <p class="modal-title fst-italic" id="exampleModalLabel">
+                Note: You will receive an email of your 
+                order transaction.
+              </p>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        
       </div>
-      <!-- End Multiple Product Instruction Modal -->
+    </div>
+  </div>
+  <!-- End How to Order Modal -->
 
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

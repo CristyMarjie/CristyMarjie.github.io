@@ -59,7 +59,7 @@
             </li>
 
             <li class="nav-item px-3">
-            <a class="nav-link text-dark fw-bold" onclick="howToOrder()" href="#">How to order</a>
+            <a class="nav-link text-dark fw-bold" data-bs-toggle="modal" data-bs-target="#howtoordermodal" aria-current="page">How to order</a>
             </li>
             <li class="nav-item px-3">
             <a class="nav-link text-dark fw-bold" aria-current="page" href="faq.html">FAQs</a>
@@ -68,14 +68,11 @@
             <a class="nav-link text-dark fw-bold" aria-current="page" href="getaquote.html">Get a Quote</a>
             </li>
             <li class="nav-item px-3">
-            <a class="nav-link text-dark fw-bold" aria-current="page" href="404.html">Contact Us</a>
+            <a class="nav-link text-dark fw-bold" aria-current="page" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item px-3">
-            <a class="nav-link text-dark fw-bold" aria-current="page" href="404.html">Payment Method</a>
+            <a class="nav-link text-dark fw-bold" aria-current="page" href="paymentmethod.html">Payment Method</a>
             </li>
-            <!--li class="nav-item px-3">
-              <a class="nav-link text-dark " aria-current="page" href="#paymentmethods"><b>Login/Register</b></a>
-            </li-->
           </ul>
           <a data-bs-toggle="modal" data-bs-target="#logInform"  class="text-decoration-none aLogin mx-2">Login</a>|
           <a data-bs-toggle="modal" data-bs-target="#signUp"  class="text-decoration-none aLogin mx-2">Signup</a>
@@ -165,10 +162,13 @@
                 <a class="nav-link text-secondary" aria-current="page" href="faq.html">FAQs</a>
               </li>
               <li>
-                <a class="nav-link text-dark fw-bold" data-bs-toggle="modal" data-bs-target="#howtoordermodal" aria-current="page" href="">How to order</a>
+                <a class="nav-link text-secondary" data-bs-toggle="modal" data-bs-target="#howtoordermodal" aria-current="page" href="">How to order</a>
               </li>
               <li>
-                <a class="nav-link text-secondary" aria-current="page" href="">Login | Register</a>
+                <a class="nav-link text-secondary" aria-current="page" data-bs-toggle="modal" data-bs-target="#logInform" href="">Login</a>
+              </li>
+              <li>
+                <a class="nav-link text-secondary" aria-current="page" data-bs-toggle="modal" data-bs-target="#signUp" href="">Signup</a>
               </li>
             </ul>
           </div>

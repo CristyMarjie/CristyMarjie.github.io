@@ -62,7 +62,7 @@
             </li>
 
             <li class="nav-item px-3">
-            <a class="nav-link text-dark fw-bold" onclick="howToOrder()" href="#">How to order</a>
+            <a class="nav-link text-dark fw-bold" data-bs-toggle="modal" data-bs-target="#howtoordermodal" aria-current="page" href="">How to order</a>
             </li>
             <li class="nav-item px-3">
             <a class="nav-link text-dark fw-bold" aria-current="page" href="faq.html">FAQs</a>
@@ -71,10 +71,10 @@
             <a class="nav-link text-dark fw-bold" aria-current="page" href="getaquote.html">Get a Quote</a>
             </li>
             <li class="nav-item px-3">
-            <a class="nav-link text-dark fw-bold" aria-current="page" href="404.html">Contact Us</a>
+            <a class="nav-link text-dark fw-bold" aria-current="page" href="contact.html">Contact Us</a>
             </li>
             <li class="nav-item px-3">
-            <a class="nav-link text-dark fw-bold" aria-current="page" href="404.html">Payment Method</a>
+            <a class="nav-link text-dark fw-bold" aria-current="page" href="paymentmethod.html">Payment Method</a>
             </li>
             <!--li class="nav-item px-3">
               <a class="nav-link text-dark " aria-current="page" href="#paymentmethods"><b>Login/Register</b></a>
@@ -93,201 +93,99 @@
     </nav>
   </header>
 
-  <!-- START C BG -->
-  <!-- <section class="container-fluid">
+  <!-- START CONTACTUS -->
+  <section class="container-fluid">
     <div id="carouselExampleIndicators" class="carousel slide container py-3" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/1.png" class="d-none d-xl-block d-xxl-none w-100" alt="Slide 1">
-          <img src="img/cc-sm.png" class="d-none d-sm-block d-md-none" alt="Slide 1">
-        </div>
-      </div>
-    </div>
-  </section> -->
-  <!-- END  -->
-
-   <!-- START TOP PRINT PRODUCTS -->
-   <section id="service" class="container-fluid d-none d-sm-block" >
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <img src="img/1.png" class="w-100">
+          <img src="img/contact.png" class="d-block w-100" alt="Slide 1">
         </div>
       </div>
     </div>
   </section>
-  <!-- END TOP PRINT PRODUCTS -->
+  <!-- END CONTACTUS -->
 
-  <!-- START TOP -->
-  <section id="getaquote" class="container py-3">
-    <div class="row py-5">
-      <div class="col-12">
-
-        <a class="btn btn-lg btn-outline-secondary" href="https://www.facebook.com/media/set/?set=a.594556218661337&type=3" target="_blank" rel="noopener noreferrer">Gallery</a>
-        <button data-bs-toggle="modal" data-bs-target="#designtemplates"  class="btn btn-lg btn-outline-secondary">Design Templates</button>
-        
-        <!-- START TABS -->
-        <!-- START --><br><br>
-        <h2 class="display-6 text-orange"><b>BUSINESS CARD</b></h2>
-
-        <div class="row">
-          <div class="col-12">
-            <h2 class="display-6 text-gray text-center"><b>PRICES</b></h2>
-          </div>
-  
-        </div>
-        <ul class="nav nav-tabs" id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button class="nav-link text-orange active" id="mattepaper-tab" data-bs-toggle="tab" data-bs-target="#mattepaper"
-            type="button" role="tab" aria-controls="home" aria-selected="true">Matte Paper Calling Card</button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button class="nav-link text-orange" id="laminated-tab" data-bs-toggle="tab" data-bs-target="#laminate"
-            type="button" role="tab" aria-controls="profile" aria-selected="false">Matte Laminated Calling Cards</button>
-          </li>
-        </ul>
-
-        <div class="tab-content m-3" id="myTabContent">
-          <div class="tab-pane fade show active" id="mattepaper" role="tabpanel" aria-labelledby="mattepaper-tab">
-            <div class="row py-3">
-              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-12 m-3">
-                <p>
-                  Material : Matte Card Paper<br>
-                  Size : 2 x 3.5 inches<br>
-                  Printing Color : CMYK<br>
-                  Processing : 2-3 days
+    <!-- START Contactus -->
+    <section class="ftco-section text-secondary ">
+		<div class="container">
+            <h1 class="h1-responsive font-weight-bold text-center my-4">CONTACT US</h1>
+            <!--Section description-->
+                <p class="text-center w-responsive mx-auto mb-5">
+                    Do you have any questions? Please do not hesitate to contact us directly.
+                    Our team will come back to you within
+                    a matter of hours to help you.
                 </p>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="typeOfCard" id="oneSide" value="1" checked>
-                  <label class="form-check-label" for="oneSide">One side</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="typeOfCard" id="2-sides" value="2">
-                  <label class="form-check-label" for="2-sides">2-sides / Back to Back</label>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 m-3">
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th scope="col">Bundle</th>
-                      <th scope="col">Quantity</th>
-                      <th scope="col">Handle</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>100</td>
-                      <td>350</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>200</td>
-                      <td>630</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>300</td>
-                      <td>945</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>400</td>
-                      <td>1,260</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td>500</td>
-                      <td>1,575</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            
-          </div>
-          <div class="tab-pane fade" id="laminate" role="tabpanel" aria-labelledby="laminated-tab">
-            <div class="row py-3">
-              <div class="col-md-6 col-sm-12 col-xs-12 col-12 col-lg-12 m-3">
-                <p>
-                  Material : Matte Card Paper, Laminate Phototop<br>
-                  Size : 2 x 3.5 inches<br>
-                  Printing Color : CMYK<br>
-                  Processing : 2-3 days
-                </p>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="cc" id="oneCc" value="1" checked>
-                  <label class="form-check-label" for="oneSide">One side</label>
-                </div>
-                <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="cc" id="b2bCc" value="2">
-                  <label class="form-check-label" for="2-sides">2-sides / Back to Back</label>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 m-3">
-                <table class="table table-striped">
-                  <thead>
-                    <tr>
-                      <th scope="col">Bundle</th>
-                      <th scope="col">Quantity</th>
-                      <th scope="col">Handle</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <td>100</td>
-                      <td>450</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td>200</td>
-                      <td>630</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">3</th>
-                      <td>300</td>
-                      <td>945</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">4</th>
-                      <td>400</td>
-                      <td>1,260</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">5</th>
-                      <td>500</td>
-                      <td>1,575</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-            
-          </div>
-          <BR>
-          <div class="row">
-            <div class="col-12 text-center">
-              <h2 class="display-6 text-gray"><b>ORIENTATION</b></h2>
-              <div class="text-center">
-                <img src="img/orientation.png" width="650px" alt="">
-              </div>
-            </div>
-    
-          </div>
-        </div>
-        
-        
-            <!-- END TABS -->
-      </div>
-    </div>
-
-  </section>
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">Send us a message*</h3>
+									<form class="contactForm">
+										<div class="row g-2">
+                                            <div class="col-md">
+                                              <div class="form-floating">
+                                                <input type="text" class="form-control" id="floatingInputGrid"required>
+                                                <label for="floatingInputGrid">Firstname</label>
+                                              </div>
+                                            </div>
+                                            <div class="col-md">
+                                              <div class="form-floating">
+                                                <input type="text" class="form-control" id="floatingInputGrid"required>
+                                                <label for="floatingInputGrid">Lastname</label>
+                                              </div>
+                                            </div>
+                                            <div class="form-floating mb-3 ">
+                                              <input  type="text" class="form-control" id="floatingInput" placeholder="" required>
+                                              <label>Username</label>
+                                            </div>
+                                            <div class="form-floating mb-3 ">
+                                              <input  type="email" class="form-control" id="floatingInput" placeholder="" required>
+                                              <label>Email</label>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="form-group">
+                                                    <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                                                </div>
+                                            </div><BR>
+                                            <div class="form-group">
+                                                <input type="submit" value="Send" class="myBtn myOrange d-grid col-4 btn btn-lg">
+                                            </div>
+                                        </div>
+									</form>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+								<div class="info-wrap w-100 p-md-5 p-4">
+									<h3>Let's get in touch</h3>
+									<p class="mb-4">We're open for any suggestion or just to have a chat</p>
+				        	<div class="dbox w-100 d-flex align-items-start">
+				        		<div class="text pl-3">
+					            <p><span>Address:</span> Brgy. Duterte, Davao City, Philippines</p>
+					            </div>
+				            </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="text pl-3">
+					            <p><span>Phone:</span> +63 946 934 1998</p>
+					            </div>
+				            </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="text pl-3">
+					            <p><span>Email:</span> account@gmail.com</p>
+					            </div>
+				            </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="text pl-3">
+					            <p><span>Business Hours: </span>8:00 AM - 6:00 PM</p>
+					            </div>
+				            </div>
+			            </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
   <hr class="dashed-2">
    <!-- START FOOTER -->
@@ -352,10 +250,14 @@
                 <a class="nav-link text-secondary" aria-current="page" href="faq.html">FAQs</a>
               </li>
               <li>
-                <a class="nav-link text-secondary" onclick="howToOrder()" href="#">How to order</a>
+                <a class="nav-link text-secondary" data-bs-toggle="modal" data-bs-target="#howtoordermodal" aria-current="page" href="">How to order</a>
+                <!--a class="nav-link text-secondary" onclick="howToOrder()" href="#">How to order</a-->
               </li>
               <li>
-                <a class="nav-link text-secondary" aria-current="page" href="">Login | Register</a>
+                <a class="nav-link text-secondary" aria-current="page" data-bs-toggle="modal" data-bs-target="#logInform" href="">Login</a>
+              </li>
+              <li>
+                <a class="nav-link text-secondary" aria-current="page" data-bs-toggle="modal" data-bs-target="#signUp" href="">Signup</a>
               </li>
             </ul>
           </div>
@@ -369,179 +271,152 @@
     </div>
   </footer>
   <!-- END FOOTER -->
+    
+    <!-- STARTS Modal SIGNUP-->
+    <div class="modal fade" id="signUp" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog  text-center" >
+        <div class="modal-content">
+          <button type="button" class="btn-close m-3 align-self-end" data-bs-dismiss="modal" aria-label="Close"></button>
+          <form action="" class="col-11 align-self-center">
+            <h5 class="display-6 text-gray text-center">
+            <b>CREATE ACCOUNT</b></h5>
+              <label>Please enter details to create account!</label>
+            <div class="modal-body">
+              
+              <div class="row g-2">
 
-  <!-- Button trigger modal -->
-  <!-- START MODAL DESIGN TEMPLATES -->
-  <div class="modal fade col-12" id="designtemplates" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl">
-      <div class="modal-content">
-          <section id="service" class="container-fluid" >
-            <div class="container py-3">
-              <div class="row">
-                <div class="col-12 text-center">
-                  <h2 class="display-6 text-orange"><b><BR>Design Templates</b></h2>
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid"required>
+                    <label for="floatingInputGrid">Firstname</label>
+                  </div>
                 </div>
+                <div class="col-md">
+                  <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingInputGrid"required>
+                    <label for="floatingInputGrid">Lastname</label>
+                  </div>
+                </div>
+                <div class="form-floating mb-3 ">
+                  <input required type="text" class="form-control" id="floatingInput" placeholder="" required>
+                  <label>Username</label>
+                </div>
+                <div class="form-floating mb-3 ">
+                  <input required type="email" class="form-control" id="floatingInput" placeholder="" required>
+                  <label>Email</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input required type="password" class="form-control" id="floatingPassword" placeholder="" required>
+                  <label for="floatingPassword">Password</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input required type="password" class="form-control" id="floatingPassword" placeholder="" required>
+                  <label for="floatingPassword">Re-type password</label>
+                </div>
+                  
               </div>
-        
-              <div class="row py-5">
-        
-                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
-                  <div class="card card-shadow border p-3 btn-outline-secondary">
-                    <div class="text-center">
-                      <img src="img/c1.png" class="card-img-top" alt="">
-                    </div><br>
-                    <div class="">
-                      <h5 class="text-uppercase py-2">MT1</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
-                  <div class="card card-shadow border p-3 btn-outline-secondary">
-                    <div class="text-center">
-                      <img src="img/c2.png" class="card-img-top" alt="">
-                    </div><br>
-                    <div class="">
-                      <h5 class="text-uppercase py-2">MT2</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
-                  <div class="card card-shadow border p-3 btn-outline-secondary">
-                    <div class="text-center">
-                      <img src="img/c3.png" class="card-img-top" alt="">
-                    </div><br>
-                    <div class="">
-                      <h5 class="text-uppercase py-2">MT3</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
-                  <div class="card card-shadow border p-3 btn-outline-secondary">
-                    <div class="text-center">
-                      <img src="img/c4.png" class="card-img-top" alt="">
-                    </div><br>
-                    <div class="">
-                      <h5 class="text-uppercase py-2">MT4</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
-                  <div class="card card-shadow border p-3 btn-outline-secondary">
-                    <div class="text-center">
-                      <img src="img/c5.png" class="card-img-top" alt="">
-                    </div><br>
-                    <div class="">
-                      <h5 class="text-uppercase py-2">MT5</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
-                  <div class="card card-shadow border p-3 btn-outline-secondary">
-                    <div class="text-center">
-                      <img src="img/c6.png" class="card-img-top" alt="">
-                    </div><br>
-                    <div class="">
-                      <h5 class="text-uppercase py-2">MT6</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
-                  <div class="card card-shadow border p-3 btn-outline-secondary">
-                    <div class="text-center">
-                      <img src="img/c7.png" class="card-img-top" alt="">
-                    </div><br>
-                    <div class="">
-                      <h5 class="text-uppercase py-2">MT7</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
-                  <div class="card card-shadow border p-3 btn-outline-secondary">
-                    <div class="text-center">
-                      <img src="img/c8.png" class="card-img-top" alt="">
-                    </div><br>
-                    <div class="">
-                      <h5 class="text-uppercase py-2">MT8</h5>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-6 col-xs-6 col-12 col-lg-4 mb-4">
-                  <div class="card card-shadow border p-3 btn-outline-secondary">
-                    <div class="text-center">
-                      <img src="img/c9.png" class="card-img-top" alt="">
-                    </div><br>
-                    <div class="">
-                      <h5 class="text-uppercase py-2">MT9</h5>
-                    </div>
-                  </div>
-                </div>                
-        
-              </div>
+              <button type="submit" class="myBtn myOrange d-grid gap-2 col-6 mx-auto btn btn-md">Create Account</button><BR><BR>
+              Already have an account? <a class="btn btn-sm rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#logInform">Login</a><BR><BR>
+  
+              <!-- <a href="https://www.facebook.com/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook text-secondary fs-4 m-1"></i></a> 
+              <a href="https://www.m.me/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-messenger text-secondary fs-4 m-1"></i></a> 
+              <a href="" class=""><i class="fa-brands fa-pinterest text-secondary fs-4 m-1"></i></a> 
+              <a href="" class=""><i class="fa-brands fa-viber text-secondary fs-4 m-1"></i></a>  -->
             </div>
-          </section>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger rounded-pill" data-bs-dismiss="modal">Close</button>
+          </form>
+        </div>
+      </div>
+    </div><!-- END Modal SIGNUP-->
+
+
+  <!-- Modal LOGIN-->
+  <div class="modal fade" id="logInform" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  text-center" >
+      <div class="modal-content">
+        <button type="button" class="btn-close m-3 align-self-end" data-bs-dismiss="modal" aria-label="Close"></button>
+        <form action="" class="col-11 align-self-center">
+          <h5 class="display-6 text-gray text-center">
+          <b>LOGIN</b></h5>
+          <div class="modal-body">
+            <div class="form-floating mb-3 ">
+              <input required type="text" class="form-control" id="floatingInput" placeholder="">
+              <label>Username</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input required type="password" class="form-control" id="floatingPassword" placeholder="">
+              <label for="floatingPassword">Password</label>
+            </div>
+            <button type="submit" class="myBtn myOrange d-grid gap-2 col-6 mx-auto btn btn-md">Login</button><BR><BR>
+            <div class="">Forgot Password?</div>  
+            Don't have an account? <a class="btn btn-sm rounded-pill fw-bold" data-bs-toggle="modal" data-bs-target="#signUp">Create Account</a><BR><BR>
+
+            <!-- <a href="https://www.facebook.com/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook text-secondary fs-4 m-1"></i></a> 
+            <a href="https://www.m.me/printcraffiti" class="" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-messenger text-secondary fs-4 m-1"></i></a> 
+            <a href="" class=""><i class="fa-brands fa-pinterest text-secondary fs-4 m-1"></i></a> 
+            <a href="" class=""><i class="fa-brands fa-viber text-secondary fs-4 m-1"></i></a>  -->
           </div>
+        </form>
       </div>
     </div>
-  </div><!-- END MODAL DESIGN TEMPLATES -->
-
-    <!-- Start Multiple Product Instruction Modal -->
-    <div class="modal fade" id="instructionModal" tabindex="-1" aria-labelledby="instructionModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-          <form action="">
-              <div class="modal-header">
-              <h5 class="modal-title" id="modalHeading">How to Order</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-              <div class="form-floating mb-3" id="modalContent">
-                <p class="modal-title" >
-                  1. Login or register for an account
-                </p>
-                <p class="modal-title" >
-                  2. Choose type of product
-                </p>
-                <p class="modal-title">
-                  3. Fill out the order information
-                </p>
-                <p class="modal-title" >
-                  4. Submit artwork by: <br>
-                  &nbsp;&nbsp;a. Uploading a design, or<br>
-                  &nbsp;&nbsp;b. Choosing a design from the browser, or<br>
-                  &nbsp;&nbsp;c. Create your own design using the online 
-                  &nbsp;&nbsp;editing tool (applicable in desktop only)
-                </p>
-                <p class="modal-title">
-                  5. Verify order information and accept the Terms and Conditions (please read before proceeding)
-                </p>
-                <p class="modal-title">
-                  6. Verify shipping and billing address
-                </p> 
-                <p class="modal-title" >
-                  7. Select shipping type
-                </p>
-                <p class="modal-title">
-                  8. Confirm order and proceed to checkout
-                </p>
-                <p class="modal-title">
-                  9. Payment
-                </p>
-                <p class="modal-title fst-italic">
-                  Note: You will receive an email of your 
-                  order transaction.
-                </p>
-             
-              </div>
-              <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-              </div>
-          </form>
+  </div>
+   <!-- END Modal LOGIN-->
+<!-- Start How to Order Modal -->
+<div class="modal fade" id="howtoordermodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">How to order</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
+          <div class="modal-body">
+            <div class="form-floating mb-3">
+              <p class="modal-title" id="exampleModalLabel">
+                1. Login or register for an account
+              </p>
+              <p class="modal-title" id="exampleModalLabel">
+                2. Choose type of product
+              </p>
+              <p class="modal-title" id="exampleModalLabel">
+                3. Fill out the order information
+              </p>
+              <p class="modal-title" id="exampleModalLabel">
+                4. Submit artwork by: <br>
+                &nbsp;&nbsp;a. Uploading a design, or<br>
+                &nbsp;&nbsp;b. Choosing a design from the browser, or<br>
+                &nbsp;&nbsp;c. Create your own design using the online 
+                &nbsp;&nbsp;editing tool (applicable in desktop only)
+              </p>
+              <p class="modal-title" id="exampleModalLabel">
+                5. Verify order information and accept the Terms and Conditions (please read before proceeding)
+              </p>
+              <p class="modal-title" id="exampleModalLabel">
+                6. Verify shipping and billing address
+              </p> 
+              <p class="modal-title" id="exampleModalLabel">
+                7. Select shipping type
+              </p>
+              <p class="modal-title" id="exampleModalLabel">
+                8. Confirm order and proceed to checkout
+              </p>
+              <p class="modal-title" id="exampleModalLabel">
+                9. Payment
+              </p>
+              <p class="modal-title fst-italic" id="exampleModalLabel">
+                Note: You will receive an email of your 
+                order transaction.
+              </p>
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+          </div>
+        
       </div>
-      </div>
-      <!-- End Multiple Product Instruction Modal -->
+    </div>
+  </div>
+  <!-- End How to Order Modal -->
+
 
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
